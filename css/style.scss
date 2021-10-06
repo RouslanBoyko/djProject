@@ -1,5 +1,5 @@
 // ----- Import partials -----
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap%27);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 // ----- General settings -----
 
@@ -7,10 +7,31 @@ body{
 font: 100% 'Poppins', sans-serif;
 margin: 0;
 padding: 0;
-background-color: black;
-overflow-x: hidden;
 }
 
+section {
 
+    .about_dj {
+    display: flex;
+    justify-content: space-around;
+    margin: 4em 13.5em 4em 15em;
 
+    h2{
+        font-size: 1.7em;
+        font-weight: 600;
+        margin-bottom: 0.5px;
+    }
 
+    p{
+        font-size: 0.7em;
+        
+    }
+
+    img{
+        width: 350px;
+        margin-right: 50px;
+    }
+
+    }
+
+}
