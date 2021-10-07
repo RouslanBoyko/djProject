@@ -1,8 +1,11 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap%27);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 body {
-  font: 100% "Poppins", sans-serif;
+  font: 100% 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+section {
   overflow-x: hidden;
 }
 
@@ -16,8 +19,12 @@ header {
 
 nav {
   padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container {
@@ -28,6 +35,8 @@ nav {
 }
 
 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -36,4 +45,137 @@ li {
   padding: 30px;
 }
 
+.about_dj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.about_dj .about {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2em;
+  padding-right: 13em;
+  height: 250px;
+}
+
+.about_dj h2 {
+  font-size: 2em;
+  font-weight: 600;
+  padding-bottom: 2px;
+  margin: 0;
+}
+
+.about_dj p {
+  font-size: 0.8em;
+  font-weight: 200;
+  margin: 0;
+}
+
+.about_dj figure {
+  margin: auto;
+  padding: 10em 5em 8em 17em;
+}
+
+.about_dj img {
+  width: 427px;
+  border-radius: 5px;
+}
+
+.about_dj q {
+  quotes: none;
+  font-size: 1.3em;
+  font-weight: 200;
+  display: block;
+  padding-block: 28px;
+  position: relative;
+}
+
+.about_dj q::before {
+  position: absolute;
+  content: ' " ';
+  color: blueviolet;
+}
+
+.listen {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../media/homepage-latest-releases-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/homepage-latest-releases-background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 24em;
+  width: 100%;
+}
+
+.listen h2 {
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 140px;
+  margin: 0;
+  height: 0px;
+}
+
+.listen a {
+  text-decoration: none;
+  color: white;
+  background-color: #8121e0;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  height: 25px;
+}
+
+.latest_releases .intro_releases {
+  text-align: center;
+  padding: 130px 390px 0px 390px;
+}
+
+.latest_releases .intro_releases h2 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.latest_releases .intro_releases p {
+  font-size: 13.5px;
+}
+
+.latest_releases .album {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat 3, 1fr;
+      grid-template-columns: repeat 3, 1fr;
+}
+
+.latest_releases .album img {
+  width: 22%;
+}
+
+.latest_releases .album h3 {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.latest_releases .album p {
+  font-weight: 200;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
 /*# sourceMappingURL=style.css.map */
