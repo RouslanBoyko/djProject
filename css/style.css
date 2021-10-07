@@ -5,7 +5,47 @@ body {
   padding: 0;
 }
 
-section .about_dj {
+section {
+  overflow-x: hidden;
+}
+
+header {
+  background-image: url("../media/homapage-banner-img.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+nav {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container {
+  padding-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #fff;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+li {
+  list-style: none;
+  padding: 30px;
+}
+
+.about_dj {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,17 +54,17 @@ section .about_dj {
   margin: 4em 13.5em 4em 15em;
 }
 
-section .about_dj h2 {
+.about_dj h2 {
   font-size: 1.7em;
   font-weight: 600;
   margin-bottom: 0.5px;
 }
 
-section .about_dj p {
+.about_dj p {
   font-size: 0.7em;
 }
 
-section .about_dj img {
+.about_dj img {
   width: 350px;
   margin-right: 50px;
 }
