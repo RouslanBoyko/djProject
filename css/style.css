@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 body {
-  font: 100% 'Poppins', sans-serif;
+  font: 100% "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -143,39 +143,168 @@ li {
 
 .latest_releases .intro_releases {
   text-align: center;
-  padding: 130px 390px 0px 390px;
+  padding: 130px 420px 0px 420px;
 }
 
 .latest_releases .intro_releases h2 {
   margin: 0;
   font-size: 32px;
   font-weight: 600;
+  padding-bottom: 5px;
 }
 
 .latest_releases .intro_releases p {
   font-size: 13.5px;
+  margin: 0;
+  padding-bottom: 70px;
+  letter-spacing: -0.5px;
 }
 
 .latest_releases .album {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: repeat 3, 1fr;
-      grid-template-columns: repeat 3, 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 1020px;
+  padding-bottom: 150px;
+}
+
+.latest_releases .album figure {
+  margin: auto;
+  text-align: center;
+  width: 314.5px;
+  height: 336.6px;
 }
 
 .latest_releases .album img {
-  width: 22%;
+  width: 100%;
+  height: 100%;
+  margin: auto;
 }
 
 .latest_releases .album h3 {
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 1px;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
 }
 
 .latest_releases .album p {
   font-weight: 200;
   font-size: 12px;
   letter-spacing: 1.5px;
+  text-align: center;
+  margin: 0;
+}
+
+.fanbase {
+  background-color: #282828;
+  background-image: url("../media/bg-circle-1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.fanbase .txt_fanbase {
+  color: white;
+  height: 800px;
+  width: 400px;
+  float: right;
+  margin-right: 220px;
+}
+
+.fanbase .txt_fanbase ul {
+  margin-left: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.fanbase .txt_fanbase h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.fanbase .txt_fanbase p {
+  font-size: 13px;
+  font-weight: 200;
+}
+
+.fanbase .txt_fanbase h3 {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.fanbase .imgfanbase {
+  height: 800px;
+  width: 700px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fanbase .imgfanbase .fanbase1 {
+  width: 174px;
+  height: 128px;
+  border-radius: 4px;
+  position: relative;
+  left: 10.5em;
+  top: 2em;
+}
+
+.fanbase .imgfanbase .fanbase2 {
+  width: 235px;
+  height: auto;
+  border-radius: 4px;
+  position: relative;
+  left: 4em;
+  top: 1em;
+}
+
+.fanbase .imgfanbase .fanbase3 {
+  border-radius: 4px;
+  width: 190px;
+  height: auto;
+  position: relative;
+  left: 8.2em;
+  bottom: 3em;
+}
+
+.fanbase .imgfanbase .fanbase4 {
+  border-radius: 4px;
+  width: 285px;
+  height: auto;
+  position: relative;
+  left: 4.5em;
+  bottom: 5em;
+}
+
+.fanbase .imgfanbase .fanbase5 {
+  border-radius: 4px;
+  width: 190px;
+  height: auto;
+  position: relative;
+  left: 10em;
+  bottom: 9.8em;
+}
+
+.fanbase .imgfanbase .fanbase6 {
+  border-radius: 4px;
+  width: 230px;
+  height: auto;
+  position: relative;
+  left: 5.5em;
+  bottom: 11em;
 }
 /*# sourceMappingURL=style.css.map */

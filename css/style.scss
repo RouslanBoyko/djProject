@@ -1,17 +1,17 @@
 // ----- Import partials -----
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 // ----- General settings -----
 
-body{
-font: 100% 'Poppins', sans-serif;
-margin: 0;
-padding: 0;
+body {
+  font: 100% "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 section {
-overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 header {
@@ -22,172 +22,294 @@ header {
   width: 100%;
 }
 
-nav
-{
+nav {
   padding: 15px;
   display: flex;
   justify-content: space-between;
 }
 
-.container
-{
+.container {
   padding-top: 30px;
   margin-left: 10%;
   margin-right: 10%;
   color: #fff;
-
 }
 
-ul
-{
+ul {
   display: flex;
 }
-li
-{
+li {
   list-style: none;
   padding: 30px;
 }
 
-//FANNY 
+//FANNY
 
 //1ere partie "About DJ Angerone"
-    .about_dj {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.about_dj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  .about {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+    padding-right: 13em;
+    height: 250px;
+  }
+
+  h2 {
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 2px;
+    margin: 0;
+  }
+
+  p {
+    font-size: 0.8em;
+    font-weight: 200;
+    margin: 0;
+  }
+
+  figure {
     margin: auto;
+    padding: 10em 5em 8em 17em;
+  }
 
-    .about {
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 2em;
-        padding-right: 13em;
-        height: 250px;
+  img {
+    width: 427px;
+    border-radius: 5px;
+  }
+
+  q {
+    quotes: none;
+    font-size: 1.3em;
+    font-weight: 200;
+    display: block;
+    padding-block: 28px;
+    position: relative;
+
+
+    //" qui se trouve en arrière plan
+    &::before {
+      position: absolute;
+      content: ' " ';
+      color: blueviolet;
     }
-   
-
-    h2{
-        font-size: 2em;
-        font-weight: 600;
-        padding-bottom: 2px;
-        margin: 0;
-    }
-
-    p{
-        font-size: 0.8em;
-        font-weight: 200;
-        margin: 0;
-    }
-
-    figure {
-        margin: auto;
-        padding: 10em 5em 8em 17em;
-    }
-
-    img{
-        width: 427px;
-        border-radius: 5px;    
-    }
-
-    q{
-        quotes: none;
-        font-size: 1.3em;
-        font-weight: 200;
-        display: block;
-        padding-block: 28px;
-        position: relative;
-
-        &::before {
-            position: absolute;
-            content: ' " ';
-            color: blueviolet;
-        }
-    }
-
-    }
+  }
+}
 
 // Fanny
 // Partie 2 Listen to the Latest Releases by DJ Angerone
-    .listen {
-        display: grid;
-    justify-items: center; 
-    justify-content: center;
+.listen {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
 
-        background-image: 
-            linear-gradient(
-            rgba(0, 0, 0, 0.3), 
-            rgba(0, 0, 0, 0.3)
-          ),
-        url('../media/homepage-latest-releases-background.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 24em;
-        width: 100%;
-        
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../media/homepage-latest-releases-background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 24em;
+  width: 100%;
 
-        h2{
-            color: white;
-            font-weight: 400;
-            font-size: 30px;
-            text-align: center;
-            padding-top: 140px;
-            margin: 0;
-            height: 0px;
-        }
+  h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 140px;
+    margin: 0;
+    height: 0px;
+  }
 
-        a {
-            text-decoration: none;
-            color: white;
-            background-color: #8121e0; 
-            padding: 12px 25px;
-            border-radius: 5px;
-            font-weight: 500;
-            font-size: 14px;
-            text-align: center;
-            height: 25px;
-          }
-    }
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: #8121e0;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    height: 25px;
+  }
+}
 
-    // Fanny
+// Fanny
 // Partie 3  Latest Releases
 
-    .latest_releases {
+.latest_releases {
+  .intro_releases {
+    text-align: center;
+    padding: 130px 420px 0px 420px;
 
-        .intro_releases {
-            text-align: center;
-            padding: 130px 390px 0px 390px;
-            
-            h2 {
-                margin: 0;
-                font-size: 32px;
-                font-weight: 600;
-            }
+    h2 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 600;
+      padding-bottom: 5px;
+    }
 
-            p {
-                font-size: 13.5px;
-            }
+    p {
+      font-size: 13.5px;
+      margin: 0;
+      padding-bottom: 70px;
+      letter-spacing: -0.5px;
+    }
+  }
 
+  //Utilisation flex pour alligner les pochettes d'albulm
+
+  .album {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 1020px;
+    padding-bottom: 150px;
+
+    figure {
+        margin: auto;
+        text-align: center;
+     
+        width: 314.5px;
+        height: 336.6px;
+
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 20px;
+      letter-spacing: 1px;
+      text-align: center;
+      margin: 0;
+      padding-top: 10px;
+    }
+    p {
+      font-weight: 200;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-align: center;
+      margin: 0;
+    
+    }
+  }
+}
+
+//Fanny
+// Partie 3 - Fan base
+
+.fanbase {
+    background-color: #282828;
+    background-image: url("../media/bg-circle-1.png");
+    background-size: cover;
+    background-position: center;
+    
+
+    .txt_fanbase {
+        color: white;
+        height: 800px;
+        width: 400px;
+        float: right;
+        margin-right: 220px;
+        
+
+        ul {
+            margin-left: 55px;
+            display: flex;
+            flex-wrap: wrap; 
+        }
+
+
+        h2 {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 13px;
+            font-weight: 200
+        }
+
+        h3 {
+            font-size: 21px;
+            font-weight: 400
+        }
+    }
+    
+    .imgfanbase {
+        
+        height: 800px;
+        width: 700px;
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        
+        .fanbase1{
+            width: 174px;
+            height: 128px;
+            border-radius: 4px;
+            position: relative;
+            left: 10.5em;
+            top: 2em;
+        }
+
+        .fanbase2{
+            width: 235px;
+            height: auto;
+            border-radius: 4px;
+            position: relative;
+            left: 4em;
+            top: 1em;
+        }
+
+        .fanbase3{
+            border-radius: 4px;
+            width: 190px;
+            height: auto;
+            position: relative;
+            left: 8.2em;
+            bottom: 3em;
+        }
+
+        .fanbase4{
+            border-radius: 4px;
+            width: 285px;
+            height: auto;
+            position: relative;
+            left: 4.5em;
+            bottom: 5em;
+        }
+
+        .fanbase5{
+            border-radius: 4px;
+            width: 190px;
+            height: auto;
+            position: relative;
+            left: 10em;
+            bottom: 9.8em;
+        }
+
+        .fanbase6{
+            border-radius: 4px;
+            width: 230px;
+            height: auto;
+            position: relative;
+            left: 5.5em;
+            bottom: 11em;
         }
 
     
-        .album {
-            display: grid;
-            grid-template-columns: repeat (3, 1fr);
-            
-            img {
-               width: 22%; 
-               
-            }
-
-            h3 {
-                font-weight: 400;
-                font-size: 20px;
-                letter-spacing: 1px;
-            }
-            p{
-                font-weight: 200;
-                font-size: 12px;
-                letter-spacing: 1.5px;
-            }
-        }
     }
+}
+
