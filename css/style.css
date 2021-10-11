@@ -155,6 +155,7 @@
 }
 .menuWrap .menu > div > div ul > li:hover {
   color: #545151;
+  cursor: pointer;
 }
 
 .menuWrap .toggler:checked ~ .menu {
@@ -166,6 +167,140 @@
 }
 .menuWrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
+}
+
+.header {
+  background-image: url("../../media/banner-img.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  padding-top: 3em;
+}
+.header ul {
+  list-style: none;
+  padding-bottom: 10px;
+}
+.header li {
+  padding-right: 20px;
+  display: inline;
+  text-transform: uppercase;
+}
+.header a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.header a:hover {
+  color: #8F929D;
+}
+.header i {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+.header i:hover {
+  color: #8F929D;
+}
+@media (max-width: 1000px) {
+  .header nav li {
+    display: none;
+  }
+}
+.header h1 {
+  margin-top: 7em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.header p {
+  color: #fff;
+}
+.header p:hover {
+  color: #8F929D;
+  cursor: pointer;
+}
+.header .bx.bxs-circle {
+  font-size: 8px;
+}
+.header ul:nth-child(2) {
+  padding-right: 22px;
+  margin-top: 4em;
+}
+
+footer {
+  background-color: #282828;
+  text-align: center;
+  height: 35rem;
+}
+footer .logoFooterAngerone {
+  position: relative;
+  padding-top: 5rem;
+  width: 20rem;
+}
+footer .about {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+@media (max-width: 700px) {
+  footer .about ul {
+    display: block;
+  }
+  footer .about ul > li {
+    padding-top: 5px;
+  }
+}
+footer ul {
+  margin-top: 2rem;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
+}
+footer ul a:hover {
+  color: #8F929D;
+}
+footer ul {
+  display: flex;
+}
+footer li {
+  list-style: none;
+  padding-right: 30px;
+}
+footer .container {
+  position: relative;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.social ul {
+  height: auto;
+  margin-top: -2rem;
+}
+.social ul i {
+  font-size: 140%;
+  border-radius: 80%;
+  background-color: rgba(68, 68, 68, 0.3);
+  padding: 12px;
+  margin-top: 2em;
+}
+.social ul i:hover {
+  color: #8F929D;
+}
+
+p {
+  font-size: 17px;
+  text-align: center;
+  color: grey;
+  padding-top: 2rem;
+  text-transform: initial;
 }
 
 body {
