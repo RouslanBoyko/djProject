@@ -1,5 +1,8 @@
 // ----- Import partials -----
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap%27');
+@import'partials/variables';
+@import 'partials/headerHome';
+@import 'partials/_menuHam.scss';
 
 // ----- General settings -----
 
@@ -13,57 +16,6 @@ overflow-x: hidden;
 
 .container
 {
-  margin-left: 10em;
-  margin-right: 10em;
-}
-
-nav
-{
-  display: flex;
-}
-header
-{
-  background-image: url("../media/homapage-banner-img.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  padding-top: 3em;
-
-
-  ul
-  {
-    display: flex;
-    list-style: none;
-    margin-left: 15em;
-  }
-}
-
-li
-{
-  flex-direction: row;
-  padding-left: 2em;
-
-
-}
-
-a
-{
-  text-decoration: none;
-  color: #fff;
-  &:hover
-  {
-    color: #666;
-  }
-
-}
-
-
-i
-{
-  color: #fff;
-  font-size:30px;
-  &:hover {color:grey;}
-  cursor: pointer;
+  margin: auto;
 }
 
