@@ -32,7 +32,7 @@
 #homeHeader i:hover {
   color: #8F929D;
 }
-@media (max-width: 1000px) {
+@media (max-width: 991px) {
   #homeHeader li {
     display: none;
   }
@@ -45,7 +45,7 @@
   left: 2rem;
   z-index: 1;
 }
-@media (max-width: 998px) {
+@media (max-width: 991px) {
   .menuWrap {
     display: block;
   }
@@ -202,7 +202,7 @@
 .header i:hover {
   color: #8F929D;
 }
-@media (max-width: 1000px) {
+@media (max-width: 991px) {
   .header nav li {
     display: none;
   }
@@ -274,33 +274,85 @@ footer .container {
   position: relative;
   text-align: center;
 }
-
-.social {
+footer .social {
   display: flex;
   justify-content: center;
   list-style-type: none;
 }
-.social ul {
+footer .social ul {
   height: auto;
   margin-top: -2rem;
 }
-.social ul i {
+footer .social ul i {
   font-size: 140%;
   border-radius: 80%;
   background-color: rgba(68, 68, 68, 0.3);
   padding: 12px;
   margin-top: 2em;
 }
-.social ul i:hover {
+footer .social ul i:hover {
   color: #8F929D;
 }
-
-p {
+footer p {
   font-size: 17px;
   text-align: center;
   color: grey;
   padding-top: 2rem;
   text-transform: initial;
+}
+
+.angeroneContact #signature {
+  float: right;
+}
+.angeroneContact ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+.angeroneContact li {
+  padding-right: 20px;
+  font-size: 25px;
+}
+.angeroneContact li:hover {
+  color: #8021E1;
+  cursor: pointer;
+}
+.angeroneContact .getInTouch {
+  border: none;
+  border-radius: 10px;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding: 1rem;
+  background-color: #8021E1;
+}
+.angeroneContact .getInTouch:hover {
+  background-color: #8F929D;
+}
+.angeroneContact .getInTouch > a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.angeroneContact p:nth-child(6) {
+  font-size: 13px;
+}
+.angeroneContact p:nth-child(7) {
+  font-style: italic;
+}
+.angeroneContact .line {
+  border-top: 2px solid grey;
+  width: 10em;
+}
+
+.discoverAngerone {
+  background-color: #F5F5F5;
+}
+.discoverAngerone .violetSquare {
+  width: 30px;
+  height: 40px;
+  outline: 2px solid #8021E1;
+  margin: auto;
 }
 
 body {
