@@ -1,0 +1,156 @@
+.menuWrap
+{
+  display: none;
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index:1;
+  @media (max-width: 991px)
+  {
+    display: block;
+  }
+
+  .toggler
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:2;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+  }
+  .hamburger
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:1;
+    width: 40px;
+    height: 40px;
+    padding:1rem;
+    background: $menuHamPrimary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// ------ menu lines --------
+
+.menuWrap .hamburger > div
+{
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+
+}
+.menuWrap .hamburger > div:before,
+.menuWrap .hamburger > div:after
+{
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+.menuWrap .hamburger > div:after
+{
+  top: 10px;
+}
+
+.menuWrap .toggler:checked + .hamburger > div
+{
+  transform: rotate(135deg);
+
+}
+
+// turn lines into X
+
+.menuWrap .toggler:checked + .hamburger > div:before,
+.menuWrap .toggler:checked + .hamburger > div:after
+{
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.menuWrap .menu
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > div
+  {
+    background-color:$menuHamOverlay;
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition:all 0.4s ease;
+  }
+}
+
+.menuWrap .menu > div > div
+{
+  text-align: center;
+  max-width: 90vw;
+  max-height:100vh;
+   opacity: 0;
+  transition: 0.4s ease;
+  ul > li
+  {
+    list-style: none;
+    color: #fff;
+    font-size:1.5rem;
+    padding: 1rem;
+    > a
+    {
+      color: inherit;
+      text-decoration: none;
+      transition: 0.4s ease;
+
+    }
+    &:hover
+    {
+      color: #545151;
+      cursor: pointer;
+    }
+  }
+}
+
+
+// ---------- show menu ------------
+
+.menuWrap .toggler:checked ~ .menu
+{
+  visibility: visible;
+  > div
+  {
+    transform: scale(1);
+    transition-duration: $menuSpeed;
+    > div
+    {
+      opacity: 1;
+    }
+  }
+}
