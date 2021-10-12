@@ -63,13 +63,12 @@ li {
   margin-right: auto;
   padding-left: 2em;
   padding-right: 13em;
-  height: 250px;
 }
 
 .about_dj h2 {
   font-size: 2em;
   font-weight: 600;
-  padding-bottom: 2px;
+  padding-bottom: 0.125em;
   margin: 0;
 }
 
@@ -85,8 +84,8 @@ li {
 }
 
 .about_dj img {
-  width: 427px;
-  border-radius: 5px;
+  width: 26.688em;
+  border-radius: 0.313em;
 }
 
 .about_dj q {
@@ -94,7 +93,7 @@ li {
   font-size: 1.3em;
   font-weight: 200;
   display: block;
-  padding-block: 28px;
+  padding-block: 1.75em;
   position: relative;
 }
 
@@ -122,42 +121,85 @@ li {
 .listen h2 {
   color: white;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 1.875em;
   text-align: center;
-  padding-top: 140px;
+  padding-top: 4.8em;
   margin: 0;
-  height: 0px;
 }
 
 .listen a {
   text-decoration: none;
   color: white;
   background-color: #8121e0;
-  padding: 12px 25px;
-  border-radius: 5px;
+  padding: 0.750em 1.563em;
+  border-radius: 0.313em;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875em;
   text-align: center;
-  height: 25px;
+  height: 1.8em;
+  position: relative;
+}
+
+.listen a::before {
+  content: "";
+  position: absolute;
+  width: 7.6rem;
+  height: 3rem;
+  border-radius: 0.313em;
+  left: 0%;
+  right: 10%;
+  top: 4%;
+}
+
+.listen a:hover {
+  background: #8121e0;
+  opacity: 0.5;
+  color: white;
+  width: 8;
+  border-radius: 0.313em;
+  -webkit-box-shadow: 0.625em 0.625em 0.375em black;
+          box-shadow: 0.625em 0.625em 0.375em black;
+}
+
+@-webkit-keyframes box {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes box {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.listen a:hover::before {
+  -webkit-animation: box 0.1s forwards ease-out;
+          animation: box 0.1s forwards ease-out;
 }
 
 .latest_releases .intro_releases {
   text-align: center;
-  padding: 130px 420px 0px 420px;
+  padding: 8.125em 27em 0em 27em;
 }
 
 .latest_releases .intro_releases h2 {
   margin: 0;
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 600;
-  padding-bottom: 5px;
+  padding-bottom: 0.5em;
 }
 
 .latest_releases .intro_releases p {
-  font-size: 13.5px;
-  margin: 0;
-  padding-bottom: 70px;
-  letter-spacing: -0.5px;
+  font-size: 0.8em;
+  padding-bottom: 4.375em;
+  letter-spacing: -0.031em;
 }
 
 .latest_releases .album {
@@ -167,15 +209,15 @@ li {
   margin: auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 1020px;
-  padding-bottom: 150px;
+  width: 63.750em;
+  padding-bottom: 9.375em;
 }
 
 .latest_releases .album figure {
   margin: auto;
   text-align: center;
-  width: 314.5px;
-  height: 336.6px;
+  width: 19.656em;
+  height: 21.038em;
 }
 
 .latest_releases .album img {
@@ -186,17 +228,17 @@ li {
 
 .latest_releases .album h3 {
   font-weight: 400;
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 1.250em;
+  letter-spacing: 0.063em;
   text-align: center;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 0.625em;
 }
 
 .latest_releases .album p {
   font-weight: 200;
-  font-size: 12px;
-  letter-spacing: 1.5px;
+  font-size: 0.750em;
+  letter-spacing: 0.1em;
   text-align: center;
   margin: 0;
 }
@@ -206,29 +248,28 @@ li {
   background-image: url("../media/bg-circle-1.png");
   background-size: cover;
   background-position: center;
-  margin-bottom: 200px;
 }
 
 .fanbase .intro {
-  margin-right: 70px;
+  margin-right: 4.375em;
 }
 
 .fanbase .txt_fanbase {
   color: white;
-  height: 800px;
-  width: 450px;
+  height: 50em;
+  width: 28.125em;
   float: right;
-  margin-right: 180px;
-  margin-top: 120px;
+  margin-right: 11.25em;
+  margin-top: 7.5em;
 }
 
 .fanbase .txt_fanbase li {
   margin: 0;
-  padding: 0 30px;
+  padding: 0 1.875em;
 }
 
 .fanbase .txt_fanbase ul {
-  margin-left: 70px;
+  margin-left: 4.375em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,23 +278,23 @@ li {
 }
 
 .fanbase .txt_fanbase h2 {
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: 600;
 }
 
 .fanbase .txt_fanbase p {
-  font-size: 13px;
+  font-size: 0.813em;
   font-weight: 200;
 }
 
 .fanbase .txt_fanbase h3 {
-  font-size: 21px;
+  font-size: 1.313em;
   font-weight: 400;
 }
 
 .fanbase .imgfanbase {
-  height: 800px;
-  width: 700px;
+  height: 54em;
+  width: 43.75em;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -263,30 +304,30 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 120px;
+  margin-top: 7.5em;
 }
 
 .fanbase .imgfanbase .fanbase1 {
-  width: 174px;
-  height: 128px;
-  border-radius: 4px;
+  width: 10.875em;
+  height: 8em;
+  border-radius: 0.250em;
   position: relative;
   left: 10.5em;
   top: 2em;
 }
 
 .fanbase .imgfanbase .fanbase2 {
-  width: 235px;
+  width: 14.688em;
   height: auto;
-  border-radius: 4px;
+  border-radius: 0.250em;
   position: relative;
   left: 4em;
   top: 1em;
 }
 
 .fanbase .imgfanbase .fanbase3 {
-  border-radius: 4px;
-  width: 190px;
+  border-radius: 0.25em;
+  width: 11.875em;
   height: auto;
   position: relative;
   left: 8.2em;
@@ -294,8 +335,8 @@ li {
 }
 
 .fanbase .imgfanbase .fanbase4 {
-  border-radius: 4px;
-  width: 285px;
+  border-radius: 0.25em;
+  width: 17.813em;
   height: auto;
   position: relative;
   left: 4.5em;
@@ -303,8 +344,8 @@ li {
 }
 
 .fanbase .imgfanbase .fanbase5 {
-  border-radius: 4px;
-  width: 190px;
+  border-radius: 0.25em;
+  width: 11.875em;
   height: auto;
   position: relative;
   left: 10em;
@@ -312,8 +353,8 @@ li {
 }
 
 .fanbase .imgfanbase .fanbase6 {
-  border-radius: 4px;
-  width: 230px;
+  border-radius: 0.25em;
+  width: 14.375em;
   height: auto;
   position: relative;
   left: 5.5em;
@@ -322,14 +363,19 @@ li {
 
 .tourschedule h2 {
   text-align: center;
-  margin: 0;
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: 600;
+  margin-bottom: 2em;
+  margin-top: 3em;
+}
+
+.tourschedule .cadre {
+  height: 60em;
 }
 
 .tourschedule .cadre .months {
   background-color: black;
-  border-radius: 8px 8px 0% 0%;
+  border-radius: 0.5em 0.5em 0% 0%;
   color: gray;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,15 +383,45 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100px;
-  width: 950px;
+  height: 6.25em;
+  width: 59.375em;
   margin: auto;
   font-weight: 500;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.094em;
+  text-align: center;
 }
 
-.tourschedule .cadre .months .white {
+.tourschedule .cadre .months li::before {
+  content: "";
+  position: absolute;
+}
+
+.tourschedule .cadre .months li:hover {
   color: white;
+  border-bottom: solid #8121e0 0.2em;
+}
+
+@-webkit-keyframes line {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes line {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.tourschedule .cadre .months li:hover::before {
+  -webkit-animation: line 0.1s forwards ease-out;
+          animation: line 0.1s forwards ease-out;
 }
 
 .tourschedule .cadre .places {
@@ -356,36 +432,39 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 948px;
-  border: solid #D4D4D4 1px;
+  width: 59.250em;
+  border: solid #d4d4d4 0.1em;
   margin: auto;
 }
 
 .tourschedule .cadre .places .dates {
   font-weight: 300;
-  font-size: 16px;
-  width: 520px;
+  font-size: 1em;
   margin: auto;
 }
 
 .tourschedule .cadre .places h3 {
   font-weight: 400;
-  font-size: 20px;
-  width: 520px;
-  margin: auto;
+  font-size: 1.25em;
+  width: 22.5em;
+  padding-left: 9em;
 }
 
 .tourschedule .cadre .places p {
-  font-size: 12.5px;
+  font-size: 0.781em;
   letter-spacing: -0.1px;
-  width: 520px;
-  margin: auto;
+  width: 42em;
+  padding-left: 9em;
+}
+
+.tourschedule .cadre .places .explications {
+  padding-left: 14.5em;
 }
 
 .tourschedule .cadre .places a {
   text-decoration: none;
   color: black;
-  font-size: 13px;
+  font-size: 0.813em;
   font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,26 +477,21 @@ li {
           align-items: center;
 }
 
-.tourschedule .cadre .places a .fleche {
-  letter-spacing: -6px;
-  font-size: 19px;
-  font-weight: 300;
-}
-
 .parteners {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../media/homepage-sponsors-background.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/homepage-sponsors-background.jpg");
   background-size: cover;
   background-position: center;
-  height: 450px;
+  height: 27em;
   width: 100%;
 }
 
 .parteners h2 {
   color: white;
   text-align: center;
-  font-size: 30px;
-  margin: 80px 0;
+  font-size: 1.9em;
+  margin: 3em 0;
+  font-weight: 600;
 }
 
 .logo {
@@ -427,25 +501,25 @@ li {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   opacity: 0.5;
-  margin: 0 180px;
+  margin: 0 11.25em;
 }
 
 .logo .logo1 {
-  height: 80px;
+  height: 5em;
 }
 
 .logo .logo2 {
-  height: 25px;
-  margin-top: 35px;
+  height: 1.563em;
+  margin-top: 2.188em;
 }
 
 .logo .logo3 {
-  height: 65px;
+  height: 4.063em;
 }
 
 .logo .logo4 {
-  height: 50px;
-  margin-top: 25px;
+  height: 3.125em;
+  margin-top: 1.563em;
 }
 
 .tickets {
@@ -456,9 +530,9 @@ li {
 
 .tickets h2 {
   text-align: center;
-  font-size: 33px;
+  font-size: 2.063em;
   font-weight: 600;
-  margin-top: 80px;
+  margin-top: 5em;
 }
 
 .tickets .tarifs {
@@ -472,21 +546,21 @@ li {
 
 .tickets .tarifs h3 {
   font-weight: 300;
-  font-size: 15px;
-  letter-spacing: 1.5px;
+  font-size: 0.938em;
+  letter-spacing: 0.094em;
 }
 
 .tickets .tarifs p {
   font-weight: 400;
-  font-size: 90px;
+  font-size: 5.625em;
   margin: auto;
 }
 
 .tickets .tarifs p .dollar {
-  font-size: 20px;
+  font-size: 0.2em;
   position: relative;
   left: 1em;
-  bottom: 2em;
+  bottom: 2.5em;
 }
 
 .tickets .tarifs ul {
@@ -495,30 +569,30 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 15px 0;
+  padding: 0.938em 0;
 }
 
 .tickets .tarifs ul li {
   padding: 0;
-  margin-bottom: 8px;
-  font-size: 12px;
-  letter-spacing: -0.3px;
+  margin-bottom: 0.5em;
+  font-size: 0.75em;
+  letter-spacing: -0.019em;
 }
 
 .tickets .tarifs .standard {
-  border-left: solid gray 1px;
-  border-right: solid gray 1px;
-  width: 350px;
+  border-left: solid gray 0.063em;
+  border-right: solid gray 0.063em;
+  width: 21.875em;
   height: auto;
   margin: 0;
 }
 
 .tickets .tarifs .basic {
-  margin-left: 200px;
+  margin-left: 12.5em;
 }
 
 .tickets .tarifs .gold {
-  margin-right: 200px;
+  margin-right: 12.5em;
 }
 
 .tickets .tarifs a {
@@ -527,11 +601,11 @@ li {
   text-align: center;
   font-weight: 500;
   position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 25px;
-  padding-right: 25px;
-  border-radius: 25px;
+  padding-top: 0.938em;
+  padding-bottom: 0.938em;
+  padding-left: 1.563em;
+  padding-right: 1.563em;
+  border-radius: 1.563em;
 }
 
 .tickets .tarifs a::before {
@@ -539,9 +613,9 @@ li {
   position: absolute;
   width: 7.6rem;
   height: 3rem;
-  border-radius: 5px;
-  border: solid black 1px;
-  border-radius: 5px;
+  border-radius: 0.313em;
+  border: solid black 0.063em;
+  border-radius: 0.313em;
   left: 0%;
   right: 10%;
   top: 4%;
@@ -550,19 +624,10 @@ li {
 .tickets .tarifs a:hover {
   background: purple;
   color: white;
-  width: 18px;
-  border-radius: 5px;
-  -webkit-box-shadow: 10px 10px 6px #DDDDDD;
-          box-shadow: 10px 10px 6px #DDDDDD;
-}
-
-@-webkit-keyframes box {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+  width: 1.125em;
+  border-radius: 0.313em;
+  -webkit-box-shadow: 0.625em 0.625em 0.375em #dddddd;
+          box-shadow: 0.625em 0.625em 0.375em #dddddd;
 }
 
 @keyframes box {
@@ -585,7 +650,7 @@ li {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: 7em;
 }
 
 .pictures .img1 {
@@ -604,19 +669,12 @@ li {
 }
 
 .pictures .img4 {
-  width: 45em;
-  height: auto;
+  width: 50%;
+  height: 100%;
 }
 
 .pictures .img5 {
-  width: 45.5em;
-  height: auto;
-}
-
-.violetSquare {
-  width: 30px;
-  height: 40px;
-  outline: 2px solid #8021E1;
-  margin: auto;
+  width: 50%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -57,13 +57,12 @@ li {
     margin-right: auto;
     padding-left: 2em;
     padding-right: 13em;
-    height: 250px;
   }
 
   h2 {
     font-size: 2em;
     font-weight: 600;
-    padding-bottom: 2px;
+    padding-bottom: 0.125em;
     margin: 0;
   }
 
@@ -79,8 +78,8 @@ li {
   }
 
   img {
-    width: 427px;
-    border-radius: 5px;
+    width: 26.688em;
+    border-radius: 0.313em;
   }
 
   q {
@@ -88,9 +87,8 @@ li {
     font-size: 1.3em;
     font-weight: 200;
     display: block;
-    padding-block: 28px;
+    padding-block: 1.75em;
     position: relative;
-
 
     //" qui se trouve en arrière plan
     &::before {
@@ -118,25 +116,59 @@ li {
   h2 {
     color: white;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.875em;
     text-align: center;
-    padding-top: 140px;
+    padding-top: 4.8em;
     margin: 0;
-    height: 0px;
   }
 
   a {
     text-decoration: none;
     color: white;
     background-color: #8121e0;
-    padding: 12px 25px;
-    border-radius: 5px;
+    padding: 0.750em 1.563em;
+    border-radius: 0.313em;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875em;
     text-align: center;
-    height: 25px;
+    height: 1.8em;
+position: relative;
   }
-}
+
+
+    a::before {
+      content: "";
+      position: absolute;
+      width: 7.6rem;
+      height: 3rem;
+      border-radius: 0.313em;
+      left: 0%;
+      right: 10%;
+      top: 4%;
+    }
+
+    a:hover {
+      background: #8121e0;
+      opacity: 0.5;
+      color: white;
+      width: 8;
+      border-radius: 0.313em;
+      box-shadow: 0.625em 0.625em 0.375em black;
+    }
+
+    @keyframes box {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    a:hover::before {
+      animation: box 0.1s forwards ease-out;
+    }
+  }
 
 // Fanny
 // Partie 3  Latest Releases
@@ -144,20 +176,20 @@ li {
 .latest_releases {
   .intro_releases {
     text-align: center;
-    padding: 130px 420px 0px 420px;
+    padding: 8.125em 27em 0em 27em;
 
     h2 {
       margin: 0;
-      font-size: 32px;
+      font-size: 2em;
       font-weight: 600;
-      padding-bottom: 5px;
+      padding-bottom: 0.5em;
     }
 
     p {
-      font-size: 13.5px;
-      margin: 0;
-      padding-bottom: 70px;
-      letter-spacing: -0.5px;
+      font-size: 0.8em;
+      
+      padding-bottom: 4.375em;
+      letter-spacing: -0.031em;
     }
   }
 
@@ -167,16 +199,15 @@ li {
     display: flex;
     margin: auto;
     justify-content: space-around;
-    width: 1020px;
-    padding-bottom: 150px;
+    width: 63.750em;
+    padding-bottom: 9.375em;
 
     figure {
-        margin: auto;
-        text-align: center;
-     
-        width: 314.5px;
-        height: 336.6px;
+      margin: auto;
+      text-align: center;
 
+      width: 19.656em;
+      height: 21.038em;
     }
 
     img {
@@ -187,19 +218,18 @@ li {
 
     h3 {
       font-weight: 400;
-      font-size: 20px;
-      letter-spacing: 1px;
+      font-size: 1.250em;
+      letter-spacing: 0.063em;
       text-align: center;
       margin: 0;
-      padding-top: 10px;
+      padding-top: 0.625em;
     }
     p {
       font-weight: 200;
-      font-size: 12px;
-      letter-spacing: 1.5px;
+      font-size: 0.750em;
+      letter-spacing: 0.1em;
       text-align: center;
       margin: 0;
-    
     }
   }
 }
@@ -208,414 +238,403 @@ li {
 // Partie 3 - Fan base
 
 .fanbase {
-    background-color: #282828;
-    background-image: url("../media/bg-circle-1.png");
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 200px;
-    
-    .intro{
-        margin-right: 70px;
+  background-color: #282828;
+  background-image: url("../media/bg-circle-1.png");
+  background-size: cover;
+  background-position: center;
+
+  .intro {
+    margin-right: 4.375em;
+  }
+
+  .txt_fanbase {
+    color: white;
+    height: 50em;
+    width: 28.125em;
+    float: right;
+    margin-right: 11.25em;
+    margin-top: 7.5em;
+
+    li {
+      margin: 0;
+      padding: 0 1.875em;
     }
 
-    .txt_fanbase {
-        color: white;
-        height: 800px;
-        width: 450px;
-        float: right;
-        margin-right: 180px;
-        margin-top: 120px;
-        
-        li {
-            margin: 0;
-            padding: 0 30px;
-        }
-
-        ul {
-            margin-left: 70px;
-            display: flex;
-            flex-wrap: wrap; 
-        }
-
-
-        h2 {
-            font-size: 30px;
-            font-weight: 600;
-        }
-
-        p {
-            font-size: 13px;
-            font-weight: 200;   
-        }
-
-        h3 {
-            font-size: 21px;
-            font-weight: 400
-        }
+    ul {
+      margin-left: 4.375em;
+      display: flex;
+      flex-wrap: wrap;
     }
-    
-    .imgfanbase {
-        
-        height: 800px;
-        width: 700px;
-        position: absolute;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 120px;
 
-        
-        .fanbase1{
-            width: 174px;
-            height: 128px;
-            border-radius: 4px;
-            position: relative;
-            left: 10.5em;
-            top: 2em;
-        }
-
-        .fanbase2{
-            width: 235px;
-            height: auto;
-            border-radius: 4px;
-            position: relative;
-            left: 4em;
-            top: 1em;
-        }
-
-        .fanbase3{
-            border-radius: 4px;
-            width: 190px;
-            height: auto;
-            position: relative;
-            left: 8.2em;
-            bottom: 3em;
-        }
-
-        .fanbase4{
-            border-radius: 4px;
-            width: 285px;
-            height: auto;
-            position: relative;
-            left: 4.5em;
-            bottom: 5em;
-        }
-
-        .fanbase5{
-            border-radius: 4px;
-            width: 190px;
-            height: auto;
-            position: relative;
-            left: 10em;
-            bottom: 9.8em;
-        }
-
-        .fanbase6{
-            border-radius: 4px;
-            width: 230px;
-            height: auto;
-            position: relative;
-            left: 5.5em;
-            bottom: 11em;
-        }
-
-    
+    h2 {
+      font-size: 1.875em;
+      font-weight: 600;
     }
+
+    p {
+      font-size: 0.813em;
+      font-weight: 200;
+    }
+
+    h3 {
+      font-size: 1.313em;
+      font-weight: 400;
+    }
+  }
+
+  .imgfanbase {
+    height: 54em;
+    width: 43.75em;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 7.5em;
+
+    .fanbase1 {
+      width: 10.875em;
+      height: 8em;
+      border-radius: 0.250em;
+      position: relative;
+      left: 10.5em;
+      top: 2em;
+    }
+
+    .fanbase2 {
+      width: 14.688em;
+      height: auto;
+      border-radius: 0.250em;
+      position: relative;
+      left: 4em;
+      top: 1em;
+    }
+
+    .fanbase3 {
+      border-radius: 0.25em;
+      width: 11.875em;
+      height: auto;
+      position: relative;
+      left: 8.2em;
+      bottom: 3em;
+    }
+
+    .fanbase4 {
+      border-radius: 0.25em;
+      width: 17.813em;
+      height: auto;
+      position: relative;
+      left: 4.5em;
+      bottom: 5em;
+    }
+
+    .fanbase5 {
+      border-radius: 0.25em;
+      width: 11.875em;
+      height: auto;
+      position: relative;
+      left: 10em;
+      bottom: 9.8em;
+    }
+
+    .fanbase6 {
+      border-radius: 0.25em;
+      width: 14.375em;
+      height: auto;
+      position: relative;
+      left: 5.5em;
+      bottom: 11em;
+    }
+  
+  }
 }
 
 //FANNY
 //Partie 4 Tour Schedule
 
 .tourschedule {
-    h2 {
-        text-align: center;
-        margin: 0;
-        font-size: 30px;
-        font-weight: 600;
+
+  h2 {
+    text-align: center;
+    font-size: 1.875em;
+    font-weight: 600;
+    margin-bottom: 2em;
+    margin-top: 3em;
+  }
+
+  .cadre {
+    height: 60em;
+    .months {
+      background-color: black;
+      border-radius: 0.5em 0.5em 0% 0%;
+      color: gray;
+      display: flex;
+      justify-content: center;
+      height: 6.25em;
+      width: 59.375em;
+      margin: auto;
+      font-weight: 500;
+      letter-spacing: 0.094em;
+      text-align: center;
+
+
+    li::before {
+      content: "";
+      position: absolute;
+      
     }
 
-    .cadre{
-        .months{
-            background-color: black;
-            border-radius: 8px 8px 0% 0%;
-            color: gray;
-            display: flex;
-            justify-content: center;
-            height: 100px;
-            width: 950px;
-            margin: auto;
-            font-weight: 500;
-            letter-spacing: 1.5px;
-            
-            .white {
-                color: white;
-            }
-        }
+    li:hover {
+      color: white;
+      border-bottom: solid #8121e0 0.2em;
+    
 
-        .places{
-            display: flex;
-            flex-direction: column;
-            width: 948px;
-            border: solid #D4D4D4 1px;
-            margin: auto;
-            
+  }
 
-            .dates{
-                font-weight: 300;
-                font-size: 16px;
-                width: 520px;
-                margin: auto;
-
-            }
-
-            h3 {
-                font-weight: 400;
-                font-size: 20px;
-                width: 520px;
-                margin: auto;
-            }
-
-            p {
-                font-size: 12.5px;
-                letter-spacing: -0.1px;
-                width: 520px;
-                margin: auto;
-            }
-
-            a {
-                text-decoration: none;
-                color: black;
-                font-size: 13px;
-                font-weight: 500;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-
-                .fleche {
-                    letter-spacing: -6px;
-                    font-size: 19px;
-                    font-weight: 300;
-                }
-                
-            }
-        }
+    @keyframes line {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
     }
+
+    li:hover::before {
+      animation: line 0.1s forwards ease-out;
+    }
+  
+
+  }
+
+    .places {
+      display: flex;
+      flex-direction: column;
+      width: 59.250em;
+      border: solid #d4d4d4 0.1em;
+      margin: auto;
+
+      .dates {
+        font-weight: 300;
+        font-size: 1em;
+        margin: auto;
+      }
+
+      h3 {
+        font-weight: 400;
+        font-size: 1.25em;
+        width: 22.5em;
+        padding-left: 9em;
+      }
+
+      p {
+        font-size: 0.781em;
+        letter-spacing: -0.1px;
+        width: 42em;
+        padding-left: 9em;
+        
+      }
+
+      .explications {
+        padding-left: 14.5em;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 0.813em;
+        font-weight: 500;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      
+      }
+    }
+  }
 }
 
 // FANNY
 //Partie 5 Sponsors
 
 .parteners {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../media/homepage-sponsors-background.jpg");
   background-size: cover;
   background-position: center;
-  height: 450px;
+  height: 27em;
   width: 100%;
-  
-  h2{
-  color: white;
-  text-align: center;
-  font-size: 30px;
-  margin: 80px 0;
-}
+
+  h2 {
+    color: white;
+    text-align: center;
+    font-size: 1.9em;
+    margin: 3em 0;
+    font-weight: 600;
+  }
 }
 
 .logo {
+  display: flex;
+  justify-content: space-around;
+  opacity: 0.5;
+  margin: 0 11.25em;
+
+  .logo1 {
+    height: 5em;
+  }
+
+  .logo2 {
+    height: 1.563em;
+    margin-top: 2.188em;
+  }
+
+  .logo3 {
+    height: 4.063em;
+  }
+  .logo4 {
+    height: 3.125em;
+    margin-top: 1.563em;
+  }
+}
+
+.tickets {
+  width: 90rem;
+  margin: auto;
+  overflow: visible;
+
+  h2 {
+    text-align: center;
+    font-size: 2.063em;
+    font-weight: 600;
+    margin-top: 5em;
+  }
+
+  .tarifs {
+    text-align: center;
     display: flex;
     justify-content: space-around;
-    opacity: 0.5;
-    margin: 0 180px;
-    
 
-    .logo1{
-        height: 80px;
+    h3 {
+      font-weight: 300;
+      font-size: 0.938em;
+      letter-spacing: 0.094em;
     }
 
+    p {
+      font-weight: 400;
+      font-size: 5.625em;
+      margin: auto;
 
-    .logo2 {
-        height: 25px;
-        margin-top: 35px;
-    }
-
-    .logo3{
-        height: 65px;
-    }
-    .logo4{
-        height: 50px;
-        margin-top: 25px;
-    }
-  }
-
-  .tickets{
-        width: 90rem;
-        margin: auto;
-        overflow: visible;
-       
-    
-  
-      h2{
-        text-align: center;
-        font-size: 33px;
-        font-weight: 600;
-        margin-top : 80px;
+      .dollar {
+        font-size: 0.2em;
+        position: relative;
+        left: 1em;
+        bottom: 2.5em;
       }
+    }
 
-      .tarifs{
-          
-          text-align: center;
-          display: flex;
-          justify-content: space-around;
-         
+    ul {
+      flex-direction: column;
+      text-align: center;
+      padding: 0.938em 0;
 
-          h3 {
-            font-weight: 300;
-            font-size: 15px;
-            letter-spacing: 1.5px
-            
-        }
-
-        p {
-            font-weight: 400;
-            font-size: 90px;
-            margin: auto;
-
-            .dollar {
-                font-size: 20px;
-                position: relative;
-            left: 1em;
-            bottom: 2em;
-                
-            }
-            
-        }
-       
-
-          ul {
-            flex-direction: column;
-            text-align: center;
-            padding: 15px 0;
-            
-
-            li {
-                padding: 0;
-                margin-bottom: 8px;
-                font-size: 12px;
-                letter-spacing: -0.3px;
-            }
-       
-        }
-
-        .standard {
-            border-left: solid gray 1px ;
-            border-right: solid gray 1px ;
-            width: 350px;
-            height: auto;
-            margin: 0;
-        }
-
-        .basic{
-            margin-left: 200px;
-        }
-
-        .gold{
-            margin-right: 200px;
-        }
-// annimation bourons Buy Now
-        a {
-            color: black;
-            text-decoration: none;
-            text-align: center;
-            font-weight: 500;
-            position: relative;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            padding-left: 25px;
-            padding-right: 25px;
-            border-radius: 25px;
-            
-            
-        }
-
-        a::before {
-            content: "";
-            position: absolute;
-            width: 7.6rem;
-            height: 3rem;
-            border-radius: 5px;
-            border: solid black 1px;
-            border-radius: 5px;
-            left: 0%;
-            right: 10%;
-            top: 4%;  
-        }
-
-   
-        
-        a:hover{
-            background: purple;
-            color: white;
-            width: 18px;
-            border-radius: 5px;
-            box-shadow: 10px 10px 6px #DDDDDD;
-        }
-
-        @keyframes box {
-            0% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-        
-        a:hover::before {
-            animation: box 0.1s forwards ease-out;
-        }
+      li {
+        padding: 0;
+        margin-bottom: 0.5em;
+        font-size: 0.75em;
+        letter-spacing: -0.019em;
       }
+    }
 
+    .standard {
+      border-left: solid gray 0.063em;
+      border-right: solid gray 0.063em;
+      width: 21.875em;
+      height: auto;
+      margin: 0;
+    }
+
+    .basic {
+      margin-left: 12.5em;
+    }
+
+    .gold {
+      margin-right: 12.5em;
+    }
+    // annimation bourons Buy Now
+    a {
+      color: black;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 500;
+      position: relative;
+      padding-top: 0.938em;
+      padding-bottom: 0.938em;
+      padding-left: 1.563em;
+      padding-right: 1.563em;
+      border-radius: 1.563em;
+    }
+
+    a::before {
+      content: "";
+      position: absolute;
+      width: 7.6rem;
+      height: 3rem;
+      border-radius: 0.313em;
+      border: solid black 0.063em;
+      border-radius: 0.313em;
+      left: 0%;
+      right: 10%;
+      top: 4%;
+    }
+
+    a:hover {
+      background: purple;
+      color: white;
+      width: 1.125em;
+      border-radius: 0.313em;
+      box-shadow: 0.625em 0.625em 0.375em #dddddd;
+    }
+
+    @keyframes box {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    a:hover::before {
+      animation: box 0.1s forwards ease-out;
+    }
   }
-  .pictures {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 40px;
+}
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 7em;
 
-    .img1 {
-      width: 33.1%;
-      height: 100%;
-    }
-    .img2 {
-        width: 33.4%;
-        height: 100%;
-    }
-
-    .img3 {
-        width: 33.4%;
-        height: 100%;
-    }
-
-    .img4 {
-        
-        width: 44em;
-        height: 100%;  
-    }
-
-    .img5 {
-        
-        width: 45em;
-        height: 100%;
-        
-    }
+  .img1 {
+    width: 33.1%;
+    height: 100%;
+  }
+  .img2 {
+    width: 33.4%;
+    height: 100%;
   }
 
-
-  // Carré violet
-
-  //.violetSquare
-  /*{
-    width: 30px;
-    height: 40px;
-    outline: 2px solid #8021E1;
-    margin: auto;
+  .img3 {
+    width: 33.4%;
+    height: 100%;
   }
 
+  .img4 {
+    width: 50%;
+    height: 100%;
+  }
+
+  .img5 {
+    width: 50%;
+    height: 100%;
+  }
+}
