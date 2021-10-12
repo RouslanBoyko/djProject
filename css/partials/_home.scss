@@ -1,350 +1,317 @@
 //FANNY
 
 //1ere partie "About DJ Angerone"
-.about_dj {
+.aboutdj {
+  margin: 5em 0 2em 0;
+
+  .about_dj {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
-  
-    .about {
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 2em;
-      padding-right: 13em;
+    margin: 2em 0;
+
+    img {
+      width: 26em;
+      border-radius: 0.313em;
     }
-  
+  }
+
+  .about {
+    margin-top: 4em;
+
     h2 {
       font-size: 2em;
       font-weight: 600;
-      padding-bottom: 0.125em;
+      text-align: left;
       margin: 0;
     }
-  
+
     p {
-      font-size: 0.8em;
+      font-size: 0.79em;
       font-weight: 200;
       margin: 0;
+      text-align: left;
     }
-  
-    figure {
-      margin: auto;
-      padding: 10em 5em 8em 17em;
-    }
-  
-    img {
-      width: 26.688em;
-      border-radius: 0.313em;
-    }
-  
     q {
       quotes: none;
       font-size: 1.3em;
       font-weight: 200;
       display: block;
-      padding-block: 1.75em;
       position: relative;
-  
+      text-align: left;
+      left: 1em;
+      margin: 1em 0;
+
       //" qui se trouve en arrière plan
       &::before {
         position: absolute;
         content: ' " ';
         color: blueviolet;
+        font-size: 10em;
+        opacity: 0.2;
+        bottom: -0.19em;
+        transform: rotate(190deg);
       }
     }
   }
+}
+
+// Fanny
+// Partie 2 Listen to the Latest Releases by DJ Angerone
+.listen {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../media/homepage-latest-releases-background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 24em;
+  width: 100%;
+
+  h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.875em;
+    text-align: center;
+    padding-top: 4.8em;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: #8121e0;
+    padding: 0.75em 1.563em;
+    border-radius: 0.313em;
+    font-weight: 500;
+    font-size: 0.875em;
+    text-align: center;
+    height: 1.8em;
+    position: relative;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    width: 7.6rem;
+    height: 3rem;
+    border-radius: 0.313em;
+    left: 0%;
+    right: 10%;
+    top: 4%;
+  }
+
+  a:hover {
+    background: #8121e0;
+    opacity: 0.5;
+    color: white;
+    width: 8;
+    border-radius: 0.313em;
+    box-shadow: 0.625em 0.625em 0.375em black;
+  }
+
+  @keyframes box {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  a:hover::before {
+    animation: box 0.1s forwards ease-out;
+  }
+}
+
+// Fanny
+// Partie 3  Latest Releases
+
+.latest_releases {
+  .intro_releases {
+    text-align: center;
+    margin: auto;
+    max-width: 41em;
   
-  // Fanny
-  // Partie 2 Listen to the Latest Releases by DJ Angerone
-  .listen {
-    display: grid;
-    justify-items: center;
-    justify-content: center;
-  
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../media/homepage-latest-releases-background.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 24em;
-    width: 100%;
-  
+
     h2 {
-      color: white;
+      margin: 3em 0 0 0;
+      font-size: 2em;
+      font-weight: 600;
+      padding-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 0.8em;
+      padding-bottom: 4.375em;
+    }
+  }
+
+  //Utilisation flex pour alligner les pochettes d'albulm
+
+  .album {
+    max-width: 70em;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+   
+
+    h3 {
       font-weight: 400;
-      font-size: 1.875em;
+      font-size: 1.25em;
       text-align: center;
-      padding-top: 4.8em;
       margin: 0;
+      padding-top: 0.625em;
     }
-  
-    a {
-      text-decoration: none;
-      color: white;
-      background-color: #8121e0;
-      padding: 0.750em 1.563em;
-      border-radius: 0.313em;
-      font-weight: 500;
-      font-size: 0.875em;
+    p {
+      font-weight: 200;
+      font-size: 0.75em;
       text-align: center;
-      height: 1.8em;
-  position: relative;
-    }
-  
-  
-      a::before {
-        content: "";
-        position: absolute;
-        width: 7.6rem;
-        height: 3rem;
-        border-radius: 0.313em;
-        left: 0%;
-        right: 10%;
-        top: 4%;
-      }
-  
-      a:hover {
-        background: #8121e0;
-        opacity: 0.5;
-        color: white;
-        width: 8;
-        border-radius: 0.313em;
-        box-shadow: 0.625em 0.625em 0.375em black;
-      }
-  
-      @keyframes box {
-        0% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-  
-      a:hover::before {
-        animation: box 0.1s forwards ease-out;
-      }
-    }
-  
-  // Fanny
-  // Partie 3  Latest Releases
-  
-  .latest_releases {
-    .intro_releases {
-      text-align: center;
-      padding: 8.125em 27em 0em 27em;
-  
-      h2 {
-        margin: 0;
-        font-size: 2em;
-        font-weight: 600;
-        padding-bottom: 0.5em;
-      }
-  
-      p {
-        font-size: 0.8em;
-        
-        padding-bottom: 4.375em;
-        letter-spacing: -0.031em;
-      }
-    }
-  
-    //Utilisation flex pour alligner les pochettes d'albulm
-  
-    .album {
-      display: flex;
-      margin: auto;
-      justify-content: space-around;
-      width: 63.750em;
-      padding-bottom: 9.375em;
-  
-      figure {
-        margin: auto;
-        text-align: center;
-  
-        width: 19.656em;
-        height: 21.038em;
-      }
-  
-      img {
-        width: 100%;
-        height: 100%;
-        margin: auto;
-      }
-  
-      h3 {
-        font-weight: 400;
-        font-size: 1.250em;
-        letter-spacing: 0.063em;
-        text-align: center;
-        margin: 0;
-        padding-top: 0.625em;
-      }
-      p {
-        font-weight: 200;
-        font-size: 0.750em;
-        letter-spacing: 0.1em;
-        text-align: center;
-        margin: 0;
-      }
+      margin: 0;
+      padding-bottom: 4em;
     }
   }
-  
-  //Fanny
-  // Partie 3 - Fan base
-  
-  .fanbase {
-    background-color: #282828;
-    background-image: url("../media/bg-circle-1.png");
-    background-size: cover;
-    background-position: center;
-  
-    .intro {
-      margin-right: 4.375em;
+}
+
+//Fanny
+// Partie 3 - Fan base
+
+.mainfanbase {
+  background-color: #282828;
+  background-image: url("../media/bg-circle-1.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 55em;
+
+  .imgfanbase {
+    height: 54em;
+    width: 43.75em;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7.5em;
+
+    .fanbase1 {
+      width: 10.875em;
+      height: 8em;
+      border-radius: 0.25em;
+      position: relative;
+      left: 10.5em;
+      top: 2em;
     }
-  
-    .txt_fanbase {
-      color: white;
-      height: 50em;
-      width: 28.125em;
-      float: right;
-      margin-right: 11.25em;
-      margin-top: 7.5em;
-  
-      li {
-        margin: 0;
-        padding: 0 1.875em;
-      }
-  
-      ul {
-        margin-left: 4.375em;
-        display: flex;
-        flex-wrap: wrap;
-      }
-  
-      h2 {
-        font-size: 1.875em;
-        font-weight: 600;
-      }
-  
-      p {
-        font-size: 0.813em;
-        font-weight: 200;
-      }
-  
-      h3 {
-        font-size: 1.313em;
-        font-weight: 400;
-      }
+
+    .fanbase2 {
+      width: 14.688em;
+      height: auto;
+      border-radius: 0.25em;
+      position: relative;
+      left: 4em;
+      top: 1em;
     }
-  
-    .imgfanbase {
-      height: 54em;
-      width: 43.75em;
-      position: absolute;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 7.5em;
-  
-      .fanbase1 {
-        width: 10.875em;
-        height: 8em;
-        border-radius: 0.250em;
-        position: relative;
-        left: 10.5em;
-        top: 2em;
-      }
-  
-      .fanbase2 {
-        width: 14.688em;
-        height: auto;
-        border-radius: 0.250em;
-        position: relative;
-        left: 4em;
-        top: 1em;
-      }
-  
-      .fanbase3 {
-        border-radius: 0.25em;
-        width: 11.875em;
-        height: auto;
-        position: relative;
-        left: 8.2em;
-        bottom: 3em;
-      }
-  
-      .fanbase4 {
-        border-radius: 0.25em;
-        width: 17.813em;
-        height: auto;
-        position: relative;
-        left: 4.5em;
-        bottom: 5em;
-      }
-  
-      .fanbase5 {
-        border-radius: 0.25em;
-        width: 11.875em;
-        height: auto;
-        position: relative;
-        left: 10em;
-        bottom: 9.8em;
-      }
-  
-      .fanbase6 {
-        border-radius: 0.25em;
-        width: 14.375em;
-        height: auto;
-        position: relative;
-        left: 5.5em;
-        bottom: 11em;
-      }
+
+    .fanbase3 {
+      border-radius: 0.25em;
+      width: 11.875em;
+      height: auto;
+      position: relative;
+      left: 8.2em;
+      bottom: 3em;
+    }
+
+    .fanbase4 {
+      border-radius: 0.25em;
+      width: 17.813em;
+      height: auto;
+      position: relative;
+      left: 4.5em;
+      bottom: 5em;
+    }
+
+    .fanbase5 {
+      border-radius: 0.25em;
+      width: 11.875em;
+      height: auto;
+      position: relative;
+      left: 10em;
+      bottom: 9.8em;
+    }
+
+    .fanbase6 {
+      border-radius: 0.25em;
+      width: 14.375em;
+      height: auto;
+      position: relative;
+      left: 5.5em;
+      bottom: 11em;
+    }
+  }
+
+  .txt_fanbase {
+    color: white;
     
-    }
-  }
-  
-  //FANNY
-  //Partie 4 Tour Schedule
-  
-  .tourschedule {
-  
+
     h2 {
-      text-align: center;
       font-size: 1.875em;
       font-weight: 600;
-      margin-bottom: 2em;
-      margin-top: 3em;
     }
-  
-    .cadre {
-      height: 60em;
-      .months {
-        background-color: black;
-        border-radius: 0.5em 0.5em 0% 0%;
-        color: gray;
-        display: flex;
-        justify-content: center;
-        height: 6.25em;
-        width: 59.375em;
-        margin: auto;
-        font-weight: 500;
-        letter-spacing: 0.094em;
-        text-align: center;
-  
-  
+
+    p {
+      font-size: 0.813em;
+      font-weight: 200;
+    }
+
+    h3 {
+      font-size: 1.313em;
+      font-weight: 400;
+    }
+
+        li {
+          margin: 0;
+          padding: 0 1.875em;
+          list-style: none;
+        }
+    }
+}
+
+//FANNY
+//Partie 4 Tour Schedule
+
+.tourschedule {
+  h2 {
+    text-align: center;
+    font-size: 1.875em;
+    font-weight: 600;
+    margin-bottom: 2em;
+    margin-top: 3em;
+  }
+
+  .cadre {
+    height: 60em;
+    .months {
+      background-color: black;
+      border-radius: 0.5em 0.5em 0% 0%;
+      color: gray;
+      display: flex;
+      justify-content: center;
+      height: 6.25em;
+      width: 59.375em;
+      margin: auto;
+      font-weight: 500;
+      text-align: center;
+      list-style: none;
+
       li::before {
         content: "";
         position: absolute;
-        
       }
-  
+
       li:hover {
         color: white;
         border-bottom: solid #8121e0 0.2em;
-      
-  
-    }
-  
+      }
+
       @keyframes line {
         0% {
           opacity: 1;
@@ -353,243 +320,238 @@
           opacity: 0;
         }
       }
-  
+
       li:hover::before {
         animation: line 0.1s forwards ease-out;
       }
-    
-  
     }
-  
-      .places {
-        display: flex;
-        flex-direction: column;
-        width: 59.250em;
-        border: solid #d4d4d4 0.1em;
+
+    .places {
+      display: flex;
+      flex-direction: column;
+      width: 59.25em;
+      border: solid #d4d4d4 0.1em;
+      margin: auto;
+      list-style: none;
+
+      .dates {
+        font-weight: 300;
+        font-size: 1em;
         margin: auto;
-  
-        .dates {
-          font-weight: 300;
-          font-size: 1em;
-          margin: auto;
-        }
-  
-        h3 {
-          font-weight: 400;
-          font-size: 1.25em;
-          width: 22.5em;
-          padding-left: 9em;
-        }
-  
-        p {
-          font-size: 0.781em;
-          letter-spacing: -0.1px;
-          width: 42em;
-          padding-left: 9em;
-          
-        }
-  
-        .explications {
-          padding-left: 14.5em;
-        }
-  
-        a {
-          text-decoration: none;
-          color: black;
-          font-size: 0.813em;
-          font-weight: 500;
-          display: flex;
-          justify-content: flex-end;
-          align-items: center;
-        
-        }
+      }
+
+      h3 {
+        font-weight: 400;
+        font-size: 1.25em;
+        width: 22.5em;
+        padding-left: 9em;
+      }
+
+      p {
+        font-size: 0.781em;
+        width: 42em;
+        padding-left: 9em;
+      }
+
+      .explications {
+        padding-left: 14.5em;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 0.813em;
+        font-weight: 500;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
       }
     }
   }
-  
-  // FANNY
-  //Partie 5 Sponsors
-  
-  .parteners {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../media/homepage-sponsors-background.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 27em;
-    width: 100%;
-  
-    h2 {
-      color: white;
-      text-align: center;
-      font-size: 1.9em;
-      margin: 3em 0;
-      font-weight: 600;
-    }
+}
+
+// FANNY
+//Partie 5 Sponsors
+
+.parteners {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../media/homepage-sponsors-background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 27em;
+  width: 100%;
+
+  h2 {
+    color: white;
+    text-align: center;
+    font-size: 1.9em;
+    margin: 3em 0;
+    font-weight: 600;
   }
-  
-  .logo {
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+  opacity: 0.5;
+  margin: 0 11.25em;
+
+  .logo1 {
+    height: 5em;
+  }
+
+  .logo2 {
+    height: 1.563em;
+    margin-top: 2.188em;
+  }
+
+  .logo3 {
+    height: 4.063em;
+  }
+  .logo4 {
+    height: 3.125em;
+    margin-top: 1.563em;
+  }
+}
+
+.tickets {
+  width: 90rem;
+  margin: auto;
+  overflow: visible;
+
+  h2 {
+    text-align: center;
+    font-size: 2.063em;
+    font-weight: 600;
+    margin-top: 5em;
+  }
+
+  .tarifs {
+    text-align: center;
     display: flex;
     justify-content: space-around;
-    opacity: 0.5;
-    margin: 0 11.25em;
-  
-    .logo1 {
-      height: 5em;
+
+    h3 {
+      font-weight: 300;
+      font-size: 0.938em;
     }
-  
-    .logo2 {
-      height: 1.563em;
-      margin-top: 2.188em;
-    }
-  
-    .logo3 {
-      height: 4.063em;
-    }
-    .logo4 {
-      height: 3.125em;
-      margin-top: 1.563em;
-    }
-  }
-  
-  .tickets {
-    width: 90rem;
-    margin: auto;
-    overflow: visible;
-  
-    h2 {
-      text-align: center;
-      font-size: 2.063em;
-      font-weight: 600;
-      margin-top: 5em;
-    }
-  
-    .tarifs {
-      text-align: center;
-      display: flex;
-      justify-content: space-around;
-  
-      h3 {
-        font-weight: 300;
-        font-size: 0.938em;
-        letter-spacing: 0.094em;
-      }
-  
-      p {
-        font-weight: 400;
-        font-size: 5.625em;
-        margin: auto;
-  
-        .dollar {
-          font-size: 0.2em;
-          position: relative;
-          left: 1em;
-          bottom: 2.5em;
-        }
-      }
-  
-      ul {
-        flex-direction: column;
-        text-align: center;
-        padding: 0.938em 0;
-  
-        li {
-          padding: 0;
-          margin-bottom: 0.5em;
-          font-size: 0.75em;
-          letter-spacing: -0.019em;
-        }
-      }
-  
-      .standard {
-        border-left: solid gray 0.063em;
-        border-right: solid gray 0.063em;
-        width: 21.875em;
-        height: auto;
-        margin: 0;
-      }
-  
-      .basic {
-        margin-left: 12.5em;
-      }
-  
-      .gold {
-        margin-right: 12.5em;
-      }
-      // annimation bourons Buy Now
-      a {
-        color: black;
-        text-decoration: none;
-        text-align: center;
-        font-weight: 500;
+
+    p {
+      font-weight: 400;
+      font-size: 5.625em;
+      margin: auto;
+
+      .dollar {
+        font-size: 0.2em;
         position: relative;
-        padding-top: 0.938em;
-        padding-bottom: 0.938em;
-        padding-left: 1.563em;
-        padding-right: 1.563em;
-        border-radius: 1.563em;
+        left: 1em;
+        bottom: 2.5em;
       }
-  
-      a::before {
-        content: "";
-        position: absolute;
-        width: 7.6rem;
-        height: 3rem;
-        border-radius: 0.313em;
-        border: solid black 0.063em;
-        border-radius: 0.313em;
-        left: 0%;
-        right: 10%;
-        top: 4%;
+    }
+
+    ul {
+      flex-direction: column;
+      text-align: center;
+      padding: 0.938em 0;
+
+      li {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0.5em;
+        font-size: 0.75em;
       }
-  
-      a:hover {
-        background: purple;
-        color: white;
-        width: 1.125em;
-        border-radius: 0.313em;
-        box-shadow: 0.625em 0.625em 0.375em #dddddd;
+    }
+
+    .standard {
+      border-left: solid gray 0.063em;
+      border-right: solid gray 0.063em;
+      width: 21.875em;
+      height: auto;
+      margin: 0;
+    }
+
+    .basic {
+      margin-left: 12.5em;
+    }
+
+    .gold {
+      margin-right: 12.5em;
+    }
+    // annimation bourons Buy Now
+    a {
+      color: black;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 500;
+      position: relative;
+      padding-top: 0.938em;
+      padding-bottom: 0.938em;
+      padding-left: 1.563em;
+      padding-right: 1.563em;
+      border-radius: 1.563em;
+    }
+
+    a::before {
+      content: "";
+      position: absolute;
+      width: 7.6rem;
+      height: 3rem;
+      border-radius: 0.313em;
+      border: solid black 0.063em;
+      border-radius: 0.313em;
+      left: 0%;
+      right: 10%;
+      top: 4%;
+    }
+
+    a:hover {
+      background: purple;
+      color: white;
+      width: 1.125em;
+      border-radius: 0.313em;
+      box-shadow: 0.625em 0.625em 0.375em #dddddd;
+    }
+
+    @keyframes box {
+      0% {
+        opacity: 1;
       }
-  
-      @keyframes box {
-        0% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0;
-        }
+      100% {
+        opacity: 0;
       }
-  
-      a:hover::before {
-        animation: box 0.1s forwards ease-out;
-      }
+    }
+
+    a:hover::before {
+      animation: box 0.1s forwards ease-out;
     }
   }
-  .pictures {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 7em;
-  
-    .img1 {
-      width: 33.1%;
-      height: 100%;
-    }
-    .img2 {
-      width: 33.4%;
-      height: 100%;
-    }
-  
-    .img3 {
-      width: 33.4%;
-      height: 100%;
-    }
-  
-    .img4 {
-      width: 50%;
-      height: 100%;
-    }
-  
-    .img5 {
-      width: 50%;
-      height: 100%;
-    }
+}
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 7em;
+
+  .img1 {
+    width: 33.1%;
+    height: 100%;
   }
+  .img2 {
+    width: 33.4%;
+    height: 100%;
+  }
+
+  .img3 {
+    width: 33.4%;
+    height: 100%;
+  }
+
+  .img4 {
+    width: 50%;
+    height: 100%;
+  }
+
+  .img5 {
+    width: 50%;
+    height: 100%;
+  }
+}

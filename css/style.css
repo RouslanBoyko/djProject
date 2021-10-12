@@ -455,7 +455,34 @@ footer p {
   margin: auto;
 }
 
-.about_dj {
+.discography img {
+  width: 21em;
+  height: auto;
+}
+
+.discography h3 {
+  font-weight: 400;
+  font-size: 1.250em;
+  letter-spacing: 0.063em;
+  text-align: center;
+  margin: auto;
+  padding-top: 0.625em;
+}
+
+.discography p {
+  font-weight: 200;
+  font-size: 0.750em;
+  letter-spacing: 0.18em;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 3em;
+}
+
+.aboutdj {
+  margin: 5em 0 2em 0;
+}
+
+.aboutdj .about_dj {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,52 +492,52 @@ footer p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: auto;
+  margin: 2em 0;
 }
 
-.about_dj .about {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 2em;
-  padding-right: 13em;
-}
-
-.about_dj h2 {
-  font-size: 2em;
-  font-weight: 600;
-  padding-bottom: 0.125em;
-  margin: 0;
-}
-
-.about_dj p {
-  font-size: 0.8em;
-  font-weight: 200;
-  margin: 0;
-}
-
-.about_dj figure {
-  margin: auto;
-  padding: 10em 5em 8em 17em;
-}
-
-.about_dj img {
-  width: 26.688em;
+.aboutdj .about_dj img {
+  width: 26em;
   border-radius: 0.313em;
 }
 
-.about_dj q {
+.aboutdj .about {
+  margin-top: 4em;
+}
+
+.aboutdj .about h2 {
+  font-size: 2em;
+  font-weight: 600;
+  text-align: left;
+  margin: 0;
+}
+
+.aboutdj .about p {
+  font-size: 0.79em;
+  font-weight: 200;
+  margin: 0;
+  text-align: left;
+}
+
+.aboutdj .about q {
   quotes: none;
   font-size: 1.3em;
   font-weight: 200;
   display: block;
-  padding-block: 1.75em;
   position: relative;
+  text-align: left;
+  left: 1em;
+  margin: 1em 0;
 }
 
-.about_dj q::before {
+.aboutdj .about q::before {
   position: absolute;
   content: ' " ';
   color: blueviolet;
+  font-size: 10em;
+  opacity: 0.2;
+  bottom: -0.19em;
+  -webkit-transform: rotate(190deg);
+          transform: rotate(190deg);
 }
 
 .listen {
@@ -541,7 +568,7 @@ footer p {
   text-decoration: none;
   color: white;
   background-color: #8121e0;
-  padding: 0.750em 1.563em;
+  padding: 0.75em 1.563em;
   border-radius: 0.313em;
   font-weight: 500;
   font-size: 0.875em;
@@ -596,11 +623,12 @@ footer p {
 
 .latest_releases .intro_releases {
   text-align: center;
-  padding: 8.125em 27em 0em 27em;
+  margin: auto;
+  max-width: 41em;
 }
 
 .latest_releases .intro_releases h2 {
-  margin: 0;
+  margin: 3em 0 0 0;
   font-size: 2em;
   font-weight: 600;
   padding-bottom: 0.5em;
@@ -609,37 +637,22 @@ footer p {
 .latest_releases .intro_releases p {
   font-size: 0.8em;
   padding-bottom: 4.375em;
-  letter-spacing: -0.031em;
 }
 
 .latest_releases .album {
+  max-width: 70em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 63.750em;
-  padding-bottom: 9.375em;
-}
-
-.latest_releases .album figure {
-  margin: auto;
-  text-align: center;
-  width: 19.656em;
-  height: 21.038em;
-}
-
-.latest_releases .album img {
-  width: 100%;
-  height: 100%;
-  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .latest_releases .album h3 {
   font-weight: 400;
-  font-size: 1.250em;
-  letter-spacing: 0.063em;
+  font-size: 1.25em;
   text-align: center;
   margin: 0;
   padding-top: 0.625em;
@@ -647,62 +660,21 @@ footer p {
 
 .latest_releases .album p {
   font-weight: 200;
-  font-size: 0.750em;
-  letter-spacing: 0.1em;
+  font-size: 0.75em;
   text-align: center;
   margin: 0;
+  padding-bottom: 4em;
 }
 
-.fanbase {
+.mainfanbase {
   background-color: #282828;
   background-image: url("../media/bg-circle-1.png");
   background-size: cover;
   background-position: center;
+  min-height: 55em;
 }
 
-.fanbase .intro {
-  margin-right: 4.375em;
-}
-
-.fanbase .txt_fanbase {
-  color: white;
-  height: 50em;
-  width: 28.125em;
-  float: right;
-  margin-right: 11.25em;
-  margin-top: 7.5em;
-}
-
-.fanbase .txt_fanbase li {
-  margin: 0;
-  padding: 0 1.875em;
-}
-
-.fanbase .txt_fanbase ul {
-  margin-left: 4.375em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.fanbase .txt_fanbase h2 {
-  font-size: 1.875em;
-  font-weight: 600;
-}
-
-.fanbase .txt_fanbase p {
-  font-size: 0.813em;
-  font-weight: 200;
-}
-
-.fanbase .txt_fanbase h3 {
-  font-size: 1.313em;
-  font-weight: 400;
-}
-
-.fanbase .imgfanbase {
+.mainfanbase .imgfanbase {
   height: 54em;
   width: 43.75em;
   position: absolute;
@@ -711,31 +683,28 @@ footer p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-top: 7.5em;
 }
 
-.fanbase .imgfanbase .fanbase1 {
+.mainfanbase .imgfanbase .fanbase1 {
   width: 10.875em;
   height: 8em;
-  border-radius: 0.250em;
+  border-radius: 0.25em;
   position: relative;
   left: 10.5em;
   top: 2em;
 }
 
-.fanbase .imgfanbase .fanbase2 {
+.mainfanbase .imgfanbase .fanbase2 {
   width: 14.688em;
   height: auto;
-  border-radius: 0.250em;
+  border-radius: 0.25em;
   position: relative;
   left: 4em;
   top: 1em;
 }
 
-.fanbase .imgfanbase .fanbase3 {
+.mainfanbase .imgfanbase .fanbase3 {
   border-radius: 0.25em;
   width: 11.875em;
   height: auto;
@@ -744,7 +713,7 @@ footer p {
   bottom: 3em;
 }
 
-.fanbase .imgfanbase .fanbase4 {
+.mainfanbase .imgfanbase .fanbase4 {
   border-radius: 0.25em;
   width: 17.813em;
   height: auto;
@@ -753,7 +722,7 @@ footer p {
   bottom: 5em;
 }
 
-.fanbase .imgfanbase .fanbase5 {
+.mainfanbase .imgfanbase .fanbase5 {
   border-radius: 0.25em;
   width: 11.875em;
   height: auto;
@@ -762,13 +731,38 @@ footer p {
   bottom: 9.8em;
 }
 
-.fanbase .imgfanbase .fanbase6 {
+.mainfanbase .imgfanbase .fanbase6 {
   border-radius: 0.25em;
   width: 14.375em;
   height: auto;
   position: relative;
   left: 5.5em;
   bottom: 11em;
+}
+
+.mainfanbase .txt_fanbase {
+  color: white;
+}
+
+.mainfanbase .txt_fanbase h2 {
+  font-size: 1.875em;
+  font-weight: 600;
+}
+
+.mainfanbase .txt_fanbase p {
+  font-size: 0.813em;
+  font-weight: 200;
+}
+
+.mainfanbase .txt_fanbase h3 {
+  font-size: 1.313em;
+  font-weight: 400;
+}
+
+.mainfanbase .txt_fanbase li {
+  margin: 0;
+  padding: 0 1.875em;
+  list-style: none;
 }
 
 .tourschedule h2 {
@@ -797,8 +791,8 @@ footer p {
   width: 59.375em;
   margin: auto;
   font-weight: 500;
-  letter-spacing: 0.094em;
   text-align: center;
+  list-style: none;
 }
 
 .tourschedule .cadre .months li::before {
@@ -842,9 +836,10 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 59.250em;
+  width: 59.25em;
   border: solid #d4d4d4 0.1em;
   margin: auto;
+  list-style: none;
 }
 
 .tourschedule .cadre .places .dates {
@@ -862,7 +857,6 @@ footer p {
 
 .tourschedule .cadre .places p {
   font-size: 0.781em;
-  letter-spacing: -0.1px;
   width: 42em;
   padding-left: 9em;
 }
@@ -957,7 +951,6 @@ footer p {
 .tickets .tarifs h3 {
   font-weight: 300;
   font-size: 0.938em;
-  letter-spacing: 0.094em;
 }
 
 .tickets .tarifs p {
@@ -983,10 +976,10 @@ footer p {
 }
 
 .tickets .tarifs ul li {
+  list-style: none;
   padding: 0;
   margin-bottom: 0.5em;
   font-size: 0.75em;
-  letter-spacing: -0.019em;
 }
 
 .tickets .tarifs .standard {
