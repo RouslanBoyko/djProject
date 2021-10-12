@@ -301,8 +301,30 @@ footer p {
   text-transform: initial;
 }
 
+#carre {
+  width: 70px;
+  height: 70px;
+  background: #8121E0;
+  border-radius: 5%;
+  margin-left: 80rem;
+  margin-top: 40rem;
+  position: absolute;
+  display: none;
+  position: fixed;
+  color: white;
+}
+#carre #carre:hover {
+  background-color: #b584e6;
+}
+
+.angeroneContact {
+  margin-top: 2em;
+}
 .angeroneContact #signature {
   float: right;
+}
+.angeroneContact img:nth-child(2) {
+  height: 25%;
 }
 .angeroneContact ul {
   list-style: none;
@@ -353,6 +375,680 @@ footer p {
   height: 40px;
   outline: 2px solid #8021E1;
   margin: auto;
+}
+
+.discographyContent {
+  margin-top: 3em;
+}
+
+.galleryContent {
+  margin-top: 3em;
+}
+.galleryContent .panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 35vh;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+}
+.galleryContent .panel:hover {
+  opacity: 0.5;
+}
+
+.aboutdj {
+  margin: 5em 0 2em 0;
+}
+.aboutdj .about_dj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0;
+}
+.aboutdj .about_dj img {
+  width: 26em;
+  border-radius: 0.313em;
+}
+.aboutdj .about {
+  margin-top: 4em;
+}
+.aboutdj .about h2 {
+  font-size: 2em;
+  font-weight: 600;
+  text-align: left;
+  margin: 0;
+}
+.aboutdj .about p {
+  font-size: 0.79em;
+  font-weight: 200;
+  margin: 0;
+  text-align: left;
+}
+.aboutdj .about q {
+  quotes: none;
+  font-size: 1.3em;
+  font-weight: 200;
+  display: block;
+  position: relative;
+  text-align: left;
+  left: 1em;
+  margin: 1em 0;
+}
+.aboutdj .about q::before {
+  position: absolute;
+  content: ' " ';
+  color: blueviolet;
+  font-size: 10em;
+  opacity: 0.2;
+  bottom: -0.19em;
+  transform: rotate(190deg);
+}
+
+.listen {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../media/homepage-latest-releases-background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 24em;
+  width: 100%;
+}
+.listen h2 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.875em;
+  text-align: center;
+  padding-top: 4.8em;
+  margin: 0;
+}
+.listen a {
+  text-decoration: none;
+  color: white;
+  background-color: #8121e0;
+  padding: 0.75em 1.563em;
+  border-radius: 0.313em;
+  font-weight: 500;
+  font-size: 0.875em;
+  text-align: center;
+  height: 1.8em;
+  position: relative;
+}
+.listen a::before {
+  content: "";
+  position: absolute;
+  width: 7.6rem;
+  height: 3rem;
+  border-radius: 0.313em;
+  left: 0;
+  right: 10%;
+  top: 4%;
+}
+.listen a:hover {
+  background: #8121e0;
+  opacity: 0.5;
+  color: white;
+  border-radius: 0.313em;
+  box-shadow: 0.625em 0.625em 0.375em black;
+}
+@keyframes box {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.listen a:hover::before {
+  animation: box 0.1s forwards ease-out;
+}
+
+.latest_releases .intro_releases {
+  text-align: center;
+  margin: auto;
+  max-width: 41em;
+}
+.latest_releases .intro_releases h2 {
+  margin: 3em 0 0 0;
+  font-size: 2em;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+.latest_releases .intro_releases p {
+  font-size: 0.8em;
+  padding-bottom: 4.375em;
+}
+.latest_releases .album {
+  max-width: 70em;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+.latest_releases .album h3 {
+  font-weight: 400;
+  font-size: 1.25em;
+  text-align: center;
+  margin: 0;
+  padding-top: 0.625em;
+}
+.latest_releases .album p {
+  font-weight: 200;
+  font-size: 0.75em;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 4em;
+}
+
+.mainfanbase {
+  background-color: #282828;
+  background-image: url("../../media/bg-circle-1.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 55em;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+@media (max-width: 786px) {
+  .mainfanbase {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.mainfanbase .imgfanbase {
+  height: 54em;
+  width: 40%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainfanbase .imgfanbase .fanbase1 {
+  width: 10.875em;
+  height: 8em;
+  border-radius: 0.25em;
+  position: relative;
+  left: 10.5em;
+  top: 2em;
+}
+.mainfanbase .imgfanbase .fanbase2 {
+  width: 14.688em;
+  height: auto;
+  border-radius: 0.25em;
+  position: relative;
+  left: 4em;
+  top: 1em;
+}
+.mainfanbase .imgfanbase .fanbase3 {
+  border-radius: 0.25em;
+  width: 11.875em;
+  height: auto;
+  position: relative;
+  left: 8.2em;
+  bottom: 3em;
+}
+.mainfanbase .imgfanbase .fanbase4 {
+  border-radius: 0.25em;
+  width: 17.813em;
+  height: auto;
+  position: relative;
+  left: 4.5em;
+  bottom: 5em;
+}
+.mainfanbase .imgfanbase .fanbase5 {
+  border-radius: 0.25em;
+  width: 11.875em;
+  height: auto;
+  position: relative;
+  left: 10em;
+  bottom: 9.8em;
+}
+.mainfanbase .imgfanbase .fanbase6 {
+  border-radius: 0.25em;
+  width: 14.375em;
+  height: auto;
+  position: relative;
+  left: 5.5em;
+  bottom: 11em;
+}
+.mainfanbase .txt_fanbase {
+  color: white;
+}
+.mainfanbase .txt_fanbase h2 {
+  font-size: 1.875em;
+  font-weight: 600;
+}
+.mainfanbase .txt_fanbase p {
+  font-size: 0.813em;
+  font-weight: 200;
+}
+.mainfanbase .txt_fanbase h3 {
+  font-size: 1.313em;
+  font-weight: 400;
+}
+.mainfanbase .txt_fanbase li {
+  margin: 0;
+  padding: 0 1.875em;
+  list-style: none;
+}
+
+.tourschedule h2 {
+  text-align: center;
+  font-size: 1.875em;
+  font-weight: 600;
+  margin-bottom: 2em;
+  margin-top: 3em;
+}
+.tourschedule .cadre {
+  max-width: 1240px;
+  padding: 1em;
+  margin: 3em auto;
+}
+.tourschedule .cadre .months {
+  background-color: black;
+  border-radius: 0.5em 0.5em 0 0;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  height: 6.25em;
+  max-width: 1240px;
+  margin: auto;
+  font-weight: 500;
+  text-align: center;
+  list-style: none;
+}
+.tourschedule .cadre .months li {
+  margin: 0.5em 1em;
+}
+.tourschedule .cadre .months li::before {
+  content: "";
+  position: absolute;
+}
+.tourschedule .cadre .months li:hover {
+  color: white;
+  border-bottom: solid #8121e0 0.2em;
+}
+@keyframes line {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.tourschedule .cadre .months li:hover::before {
+  animation: line 0.1s forwards ease-out;
+}
+.tourschedule .cadre .places {
+  display: flex;
+  flex-direction: column;
+  max-width: 1240px;
+  border: solid #d4d4d4 0.1em;
+  margin: auto;
+  list-style: none;
+}
+.tourschedule .cadre .places .dates {
+  font-weight: 300;
+  font-size: 1em;
+  margin: auto;
+}
+.tourschedule .cadre .places h3 {
+  font-weight: 400;
+  font-size: 1.25em;
+  padding-left: 9em;
+}
+.tourschedule .cadre .places p {
+  font-size: 0.781em;
+  padding-left: 9em;
+}
+.tourschedule .cadre .places .explications {
+  padding-left: 14.5em;
+}
+.tourschedule .cadre .places a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.813em;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.parteners {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../media/homepage-sponsors-background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 27em;
+  width: 100%;
+}
+.parteners h2 {
+  color: white;
+  text-align: center;
+  font-size: 1.9em;
+  margin: 3em 0;
+  font-weight: 600;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 11.25em;
+}
+.logo .logo1 {
+  height: 5em;
+}
+.logo .logo2 {
+  height: 1.563em;
+  margin-top: 2.188em;
+}
+.logo .logo3 {
+  height: 4.063em;
+}
+.logo .logo4 {
+  height: 3.125em;
+  margin-top: 1.563em;
+}
+
+.tickets {
+  max-width: 1240px;
+  width: 100%;
+  margin: auto;
+  overflow: visible;
+}
+.tickets h2 {
+  text-align: center;
+  font-size: 2.063em;
+  font-weight: 600;
+  margin-top: 5em;
+}
+.tickets .tarifs {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.tickets .tarifs div {
+  margin: 2em 0;
+}
+.tickets .tarifs h3 {
+  font-weight: 300;
+  font-size: 0.938em;
+}
+.tickets .tarifs p {
+  font-weight: 400;
+  font-size: 5.625em;
+  margin: auto;
+}
+.tickets .tarifs p .dollar {
+  font-size: 0.2em;
+  position: relative;
+  left: 1em;
+  bottom: 2.5em;
+}
+.tickets .tarifs ul {
+  flex-direction: column;
+  text-align: center;
+  padding: 0.938em 0;
+}
+.tickets .tarifs ul li {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0.5em;
+  font-size: 0.75em;
+}
+.tickets .tarifs .standard {
+  border-left: solid gray 0.063em;
+  border-right: solid gray 0.063em;
+  width: 21.875em;
+  height: auto;
+  margin: 0;
+}
+.tickets .tarifs a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  padding: 0.938em 1.563em;
+  border-radius: 1.563em;
+}
+.tickets .tarifs a::before {
+  content: "";
+  position: absolute;
+  width: 7.6rem;
+  height: 3rem;
+  border-radius: 0.313em;
+  border: solid black 0.063em;
+  left: 0;
+  right: 10%;
+  top: 4%;
+}
+.tickets .tarifs a:hover {
+  background: purple;
+  color: white;
+  width: 1.125em;
+  border-radius: 0.313em;
+  box-shadow: 0.625em 0.625em 0.375em #dddddd;
+}
+@keyframes box {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.tickets .tarifs a:hover::before {
+  animation: box 0.1s forwards ease-out;
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 7em;
+}
+.pictures .img1 {
+  width: 33.1%;
+  height: 100%;
+}
+.pictures .img2 {
+  width: 33.4%;
+  height: 100%;
+}
+.pictures .img3 {
+  width: 33.4%;
+  height: 100%;
+}
+.pictures .img4 {
+  width: 50%;
+  height: 100%;
+}
+.pictures .img5 {
+  width: 50%;
+  height: 100%;
+}
+
+.titreSection {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 1em;
+}
+.titreSection button {
+  border-radius: 3px;
+  background-color: #8121E0;
+  margin-left: -20rem;
+  margin-top: 2rem;
+  border: 0;
+  line-height: 2;
+  padding: 1px 8px;
+}
+.titreSection button a {
+  color: white;
+  font-size: 15px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+}
+.titreSection .h4 {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: start;
+}
+.titreSection .p {
+  font-size: 15px;
+  text-align: start;
+  color: grey;
+  padding-top: 0;
+}
+.titreSection .p2 {
+  font-size: 18px;
+  text-align: start;
+  color: black;
+  padding-top: 0;
+}
+.titreSection img {
+  padding-bottom: 3em;
+  padding-top: 3em;
+  width: 100px;
+  height: 100px;
+}
+
+.imageNewsBackground {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../media/homepage-news-background.jpg");
+  background-size: cover;
+  border-radius: 5px;
+}
+.imageNewsBackground > * {
+  color: white;
+}
+
+.homePageFooterBackground {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../media/homepage-footer-background.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homePageFooterBackground .subscribe {
+  position: absolute;
+  color: #fff;
+  width: 80%;
+}
+.homePageFooterBackground .subscribeBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .homePageFooterBackground .subscribeBox {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.homePageFooterBackground .inputsubscribe {
+  height: 35px;
+  width: 80%;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 17px;
+  color: grey;
+  font-family: "Poppins", sans-serif;
+  margin: 0 1em;
+}
+.homePageFooterBackground .buttonsubscribe {
+  margin: 1em;
+  border: 0;
+  line-height: 2.5;
+  padding: 17px 40px;
+  font-size: 15px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #8121E0;
+  font-weight: 600;
+}
+.homePageFooterBackground #titleSubscribe {
+  font-weight: 800;
+}
+.homePageFooterBackground #titleSubscribe p {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+footer {
+  background-color: #282828;
+  text-align: center;
+  height: 50rem;
+}
+footer .logoFooterAngerone {
+  position: relative;
+  padding-top: 10rem;
+  width: 20rem;
+}
+footer .about {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+footer ul {
+  padding: 0;
+  margin-top: 2rem;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.social ul {
+  height: auto;
+  margin-top: -2rem;
+}
+.social ul i {
+  font-size: 140%;
+  border-radius: 80%;
+  background-color: rgba(68, 68, 68, 0.3);
+  padding: 12px;
+}
+.social p {
+  font-size: 17px;
+  text-align: center;
+  color: grey;
+  padding-top: 2rem;
+  text-transform: initial;
+}
+
+.carre {
+  width: 70px;
+  height: 70px;
+  background: #8121E0;
+  border-radius: 5%;
+  margin-left: 100rem;
+  margin-top: 5rem;
 }
 
 body {
