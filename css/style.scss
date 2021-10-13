@@ -1,0 +1,30 @@
+// ----- Import partials -----
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap%27');
+@import'partials/variables';
+@import 'partials/headerHome';
+@import 'partials/_menuHam.scss';
+@import 'partials/_header.scss';
+@import 'partials/_footer.scss';
+@import 'partials/_about.scss';
+@import 'partials/_discography.scss';
+@import 'partials/_gallery.scss';
+@import 'partials/_home.scss';
+
+// ----- General settings -----
+
+body
+{
+  font: 100% 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container
+{
+  margin: auto;
+}
+
+
+
+

@@ -1,0 +1,28 @@
+
+.galleryContent
+{
+  margin-top:3em;
+
+
+  .panel
+  {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 35vh;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+
+    &:hover
+    {
+      opacity: 0.5;
+    }
+  }
+
+
+}
+
