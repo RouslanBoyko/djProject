@@ -1077,7 +1077,7 @@ footer p {
 }
 
 .tickets .tarifs a:hover {
-  background: purple;
+  background: #8121e0;
   color: white;
   width: 1.125em;
   border-radius: 0.313em;
@@ -1359,6 +1359,184 @@ footer ul a {
   border-radius: 5%;
   margin-left: 100rem;
   margin-top: 5rem;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.tourschedule {
+  margin-bottom: 10em;
+}
+
+.tourschedule h2 {
+  text-align: center;
+  font-size: 1.875em;
+  font-weight: 600;
+  margin-bottom: 2em;
+  margin-top: 3em;
+}
+
+.tourschedule .cadre {
+  max-width: 1240px;
+  padding: 1em;
+  margin: 3em auto;
+}
+
+.tourschedule .cadre .months {
+  background-color: black;
+  border-radius: 0.5em 0.5em 0 0;
+  color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 6.25em;
+  max-width: 1240px;
+  margin: auto;
+  font-weight: 500;
+  text-align: center;
+  list-style: none;
+}
+
+.tourschedule .cadre .months li {
+  margin: .3em 4em;
+  padding-top: 2em;
+}
+
+.tourschedule .cadre .months li::before {
+  content: "";
+  position: absolute;
+}
+
+.tourschedule .cadre .months li:hover {
+  color: white;
+  border-bottom: solid #8121e0 0.2em;
+}
+
+@keyframes line {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.tourschedule .cadre .months li:hover::before {
+  -webkit-animation: line 0.1s forwards ease-out;
+          animation: line 0.1s forwards ease-out;
+}
+
+.tourschedule .cadre .timeline {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1240px;
+  margin: auto;
+  list-style: none;
+  padding: 0 2Opx 0 30px;
+  border: 1px solid black;
+}
+
+.tourschedule .cadre .timeline div {
+  font-size: 16px;
+  position: relative;
+  height: 110px;
+  margin-left: 15em;
+}
+
+.tourschedule .cadre .timeline .place1 {
+  border-left: 2px solid grey;
+  padding: 5em 0 1em 0;
+}
+
+.tourschedule .cadre .timeline .place2 {
+  border-left: 2px solid grey;
+  padding: 1em 0;
+}
+
+.tourschedule .cadre .timeline .place3 {
+  border-left: 2px solid grey;
+  padding: 1em 0;
+}
+
+.tourschedule .cadre .timeline .place3 {
+  border-left: 2px solid grey;
+  padding: 1em 0;
+}
+
+.tourschedule .cadre .timeline .place4 {
+  border-left: 2px solid grey;
+  padding: 1em 0;
+}
+
+.tourschedule .cadre .timeline div:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid gray;
+  position: absolute;
+  left: -13px;
+}
+
+.tourschedule .cadre .timeline .place1:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #8121e0;
+  border: 2px solid gray;
+  position: absolute;
+  left: -13px;
+}
+
+.tourschedule .cadre .timeline .dates {
+  font-weight: 300;
+  font-size: 1em;
+  margin: auto;
+}
+
+.tourschedule .cadre .timeline h3 {
+  font-weight: 400;
+  font-size: 1.25em;
+  padding-left: 7em;
+}
+
+.tourschedule .cadre .timeline p {
+  font-size: 0.781em;
+  padding-left: 9em;
+}
+
+.tourschedule .cadre .timeline .explications {
+  padding-right: 17em;
+  padding-left: 11.3em;
+}
+
+.tourschedule .cadre .timeline a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.813em;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 5em;
 }
 
 body {
