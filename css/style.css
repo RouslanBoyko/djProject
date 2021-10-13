@@ -1479,6 +1479,11 @@ header h1 {
   padding: 1em 0;
 }
 
+.tourschedule .cadre .timeline .place5 {
+  border-left: 2px solid grey;
+  padding: 1em 0;
+}
+
 .tourschedule .cadre .timeline div:before {
   content: '';
   display: block;
