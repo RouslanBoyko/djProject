@@ -230,7 +230,7 @@
 footer {
   background-color: #282828;
   text-align: center;
-  height: 35rem;
+  height: 15rem;
 }
 footer .logoFooterAngerone {
   position: relative;
@@ -1049,38 +1049,100 @@ footer ul a {
   margin-top: 5rem;
 }
 
-.containerCounter {
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  flex-direction: column;
-  height: 30vh;
-}
-.containerCounter > h2 {
-  text-align: center;
-  font-size: 2em;
-}
-
 .countdown {
-  display: flex;
-  margin-top: -50px;
-}
-.countdown > div {
-  position: relative;
-  width: 100%;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-  background: #333;
+  width: 80vh;
   color: #fff;
-  margin-top: 80px;
-  margin-right: 2em;
-  font-size: 3em;
-  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 100%;
+  left: 50%;
 }
 
+.box {
+  width: 28vmin;
+  height: 28vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+}
+
+.box:after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.12);
+  height: 100%;
+  width: 50%;
+  left: 0;
+}
+
+span.num {
+  background-color: rgba(129, 33, 224, 0.58);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 5em;
+}
+
+span.text {
+  font-size: 1.2em;
+  background-color: #7529be;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.5em 0;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  .countdown {
+    width: 85vw;
+  }
+
+  .box {
+    height: 26vmin;
+    width: 26vmin;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .countdown {
+    width: 90vw;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .box {
+    width: calc(50% - 40px);
+    height: 30vmin;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .countdown {
+    width: 45vw;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .box {
+    width: 100%;
+    height: 25vmin;
+    font-size: 8px;
+  }
+
+  span.text {
+    font-size: 1.5em;
+  }
+}
 body {
   font: 100% "Poppins", sans-serif;
   margin: 0;
