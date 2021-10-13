@@ -1,8 +1,13 @@
 
 // ----------------- FIRST SECTION --------------------------------
 .angeroneContact {
+  margin-top:2em;
   #signature {
     float: right;
+  }
+  img:nth-child(2)
+  {
+    height:25%;
   }
 
   ul {
