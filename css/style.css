@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap%27");
 #homeHeader {
-  background-image: url("../../media/homapage-banner-img.jpg");
+  background-image: url("../media/homapage-banner-img.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -170,7 +170,7 @@
 }
 
 .header {
-  background-image: url("../../media/banner-img.jpg");
+  background-image: url("../media/banner-img.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -452,7 +452,7 @@ footer p {
   display: grid;
   justify-items: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../media/homepage-latest-releases-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/homepage-latest-releases-background.jpg");
   background-size: cover;
   background-position: center;
   height: 24em;
@@ -545,7 +545,7 @@ footer p {
 
 .mainfanbase {
   background-color: #282828;
-  background-image: url("../../media/bg-circle-1.png");
+  background-image: url("../media/bg-circle-1.png");
   background-size: cover;
   background-position: center;
   min-height: 55em;
@@ -718,7 +718,7 @@ footer p {
 }
 
 .parteners {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../media/homepage-sponsors-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/homepage-sponsors-background.jpg");
   background-size: cover;
   background-position: center;
   height: 27em;
@@ -917,7 +917,7 @@ footer p {
 }
 
 .imageNewsBackground {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../media/homepage-news-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/homepage-news-background.jpg");
   background-size: cover;
   border-radius: 5px;
 }
@@ -926,7 +926,7 @@ footer p {
 }
 
 .homePageFooterBackground {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../media/homepage-footer-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/homepage-footer-background.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;

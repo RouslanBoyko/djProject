@@ -62,7 +62,7 @@
   justify-content: center;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-  url("../../media/homepage-latest-releases-background.jpg");
+  url("../media/homepage-latest-releases-background.jpg");
   background-size: cover;
   background-position: center;
   height: 24em;
@@ -177,7 +177,7 @@
 
 .mainfanbase {
   background-color: #282828;
-  background-image: url("../../media/bg-circle-1.png");
+  background-image: url("../media/bg-circle-1.png");
   background-size: cover;
   background-position: center;
   min-height: 55em;
@@ -384,7 +384,7 @@
 
 .parteners {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-  url("../../media/homepage-sponsors-background.jpg");
+  url("../media/homepage-sponsors-background.jpg");
   background-size: cover;
   background-position: center;
   height: 27em;
@@ -621,7 +621,7 @@
 
 
 .imageNewsBackground {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../../media/homepage-news-background.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../media/homepage-news-background.jpg');
   background-size:cover;
   border-radius: 5px;
   >* {
@@ -632,7 +632,7 @@
 }
 
 .homePageFooterBackground {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../../media/homepage-footer-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../media/homepage-footer-background.jpg");
   //background-image: url("../media/homepage-footer-background.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
