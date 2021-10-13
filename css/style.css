@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap%27");
 #homeHeader {
   background-image: url("../media/homapage-banner-img.jpg");
@@ -810,11 +811,18 @@ footer p {
 }
 
 .mainfanbase .txt_fanbase li {
+=======
+<<<<<<< HEAD
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap%27);
+body {
+  font: 100% "Poppins", sans-serif;
+>>>>>>> Francis
   margin: 0;
   padding: 0 1.875em;
   list-style: none;
 }
 
+<<<<<<< HEAD
 .tourschedule h2 {
   text-align: center;
   font-size: 1.875em;
@@ -942,10 +950,241 @@ footer p {
 =======
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/homepage-sponsors-background.jpg");
 >>>>>>> dev
+=======
+header {
+  background-image: url("../media/homapage-banner-img.jpg");
+=======
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap%27");
+#homeHeader {
+  background-image: url("../../media/homapage-banner-img.jpg");
+>>>>>>> Francis
   background-size: cover;
   background-position: center;
   height: 27em;
   width: 100%;
+  padding-top: 3em;
+}
+
+#homeHeader ul {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+#homeHeader li {
+  padding-right: 20px;
+  display: inline;
+  text-transform: uppercase;
+}
+
+#homeHeader a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+#homeHeader a:hover {
+  color: #8F929D;
+}
+
+#homeHeader i {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#homeHeader i:hover {
+  color: #8F929D;
+}
+
+@media (max-width: 991px) {
+  #homeHeader li {
+    display: none;
+  }
+}
+
+.menuWrap {
+  display: none;
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  .menuWrap {
+    display: block;
+  }
+}
+
+.menuWrap .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+}
+
+.menuWrap .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menuWrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.menuWrap .hamburger > div:before,
+.menuWrap .hamburger > div:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+.menuWrap .hamburger > div:after {
+  top: 10px;
+}
+
+.menuWrap .toggler:checked + .hamburger > div {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.menuWrap .toggler:checked + .hamburger > div:before,
+.menuWrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.menuWrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menuWrap .menu > div {
+  background-color: rgba(24, 39, 51, 0.85);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.menuWrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.menuWrap .menu > div > div ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menuWrap .menu > div > div ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.menuWrap .menu > div > div ul > li:hover {
+  color: #545151;
+  cursor: pointer;
+}
+
+.menuWrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menuWrap .toggler:checked ~ .menu > div {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+}
+
+.menuWrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+}
+
+.header {
+  background-image: url("../../media/banner-img.jpg");
+>>>>>>> cab4702912e8826f7da22ad4a96ec0038b1f2a38
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+<<<<<<< HEAD
 }
 
 .parteners h2 {
@@ -1714,4 +1953,1208 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+<<<<<<< HEAD
 >>>>>>> dev
+=======
+=======
+  padding-top: 3em;
+}
+
+.header ul {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.header li {
+  padding-right: 20px;
+  display: inline;
+  text-transform: uppercase;
+}
+
+.header a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header a:hover {
+  color: #8F929D;
+}
+
+.header i {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.header i:hover {
+  color: #8F929D;
+}
+
+@media (max-width: 991px) {
+  .header nav li {
+    display: none;
+  }
+}
+
+.header h1 {
+  margin-top: 7em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header p {
+  color: #fff;
+}
+
+.header p:hover {
+  color: #8F929D;
+  cursor: pointer;
+}
+
+.header .bx.bxs-circle {
+  font-size: 8px;
+}
+
+.header ul:nth-child(2) {
+  padding-right: 22px;
+  margin-top: 4em;
+}
+
+footer {
+  background-color: #282828;
+  text-align: center;
+  height: 35rem;
+}
+
+footer .logoFooterAngerone {
+  position: relative;
+  padding-top: 5rem;
+  width: 20rem;
+  margin-right: 2rem;
+}
+
+footer .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  margin: 3rem;
+}
+
+@media (max-width: 700px) {
+  footer .about ul {
+    display: block;
+  }
+  footer .about ul > li {
+    padding-top: 5px;
+  }
+}
+
+footer ul {
+  margin-top: 2rem;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer ul a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul a:hover {
+  color: #8F929D;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer li {
+  list-style: none;
+  padding-right: 30px;
+}
+
+footer .container {
+  position: relative;
+  text-align: center;
+}
+
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+}
+
+footer .social ul {
+  height: auto;
+  margin-top: -2rem;
+}
+
+footer .social ul i {
+  font-size: 140%;
+  border-radius: 80%;
+  background-color: rgba(68, 68, 68, 0.3);
+  padding: 12px;
+  margin-top: 2em;
+}
+
+footer .social ul i:hover {
+  color: #8F929D;
+}
+
+footer p {
+  font-size: 17px;
+  text-align: center;
+  color: grey;
+  padding-top: 6rem;
+  text-transform: initial;
+}
+
+#carre {
+  width: 70px;
+  height: 70px;
+  background: #8121E0;
+  border-radius: 5%;
+  margin-left: 80rem;
+  margin-top: 40rem;
+  position: absolute;
+  display: none;
+  position: fixed;
+  color: white;
+  z-index: 1;
+}
+
+.angeroneContact {
+  margin-top: 2em;
+}
+
+.angeroneContact #signature {
+  float: right;
+}
+
+.angeroneContact img:nth-child(2) {
+  height: 25%;
+}
+
+.angeroneContact ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+}
+
+.angeroneContact li {
+  padding-right: 20px;
+  font-size: 25px;
+}
+
+.angeroneContact li:hover {
+  color: #8021E1;
+  cursor: pointer;
+}
+
+.angeroneContact .getInTouch {
+  border: none;
+  border-radius: 10px;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding: 1rem;
+  background-color: #8021E1;
+}
+
+.angeroneContact .getInTouch:hover {
+  background-color: #8F929D;
+}
+
+.angeroneContact .getInTouch > a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.angeroneContact p:nth-child(6) {
+  font-size: 13px;
+}
+
+.angeroneContact p:nth-child(7) {
+  font-style: italic;
+}
+
+.angeroneContact .line {
+  border-top: 2px solid grey;
+  width: 10em;
+}
+
+.discoverAngerone {
+  background-color: #F5F5F5;
+}
+
+.discoverAngerone .violetSquare {
+  width: 30px;
+  height: 40px;
+  outline: 2px solid #8021E1;
+  margin: auto;
+}
+
+.discographyContent {
+  margin-top: 3em;
+}
+
+.galleryContent {
+  margin-top: 3em;
+}
+
+.galleryContent .panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 35vh;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  margin: 10px;
+  position: relative;
+}
+
+.galleryContent .panel:hover {
+  opacity: 0.5;
+}
+
+.aboutdj {
+  margin: 5em 0 2em 0;
+}
+
+.aboutdj .about_dj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2em 0;
+}
+
+.aboutdj .about_dj img {
+  width: 26em;
+  border-radius: 0.313em;
+}
+
+.aboutdj .about {
+  margin-top: 4em;
+}
+
+.aboutdj .about h2 {
+  font-size: 2em;
+  font-weight: 600;
+  text-align: left;
+  margin: 0;
+}
+
+.aboutdj .about p {
+  font-size: 0.79em;
+  font-weight: 200;
+  margin: 0;
+  text-align: left;
+}
+
+.aboutdj .about q {
+  quotes: none;
+  font-size: 1.3em;
+  font-weight: 200;
+  display: block;
+  position: relative;
+  text-align: left;
+  left: 1em;
+  margin: 1em 0;
+}
+
+.aboutdj .about q::before {
+  position: absolute;
+  content: ' " ';
+  color: blueviolet;
+  font-size: 10em;
+  opacity: 0.2;
+  bottom: -0.19em;
+  -webkit-transform: rotate(190deg);
+          transform: rotate(190deg);
+}
+
+.listen {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../media/homepage-latest-releases-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../media/homepage-latest-releases-background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 24em;
+  width: 100%;
+}
+
+.listen h2 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.875em;
+  text-align: center;
+  padding-top: 4.8em;
+  margin: 0;
+}
+
+.listen a {
+  text-decoration: none;
+  color: white;
+  background-color: #8121e0;
+  padding: 0.75em 1.563em;
+  border-radius: 0.313em;
+  font-weight: 500;
+  font-size: 0.875em;
+  text-align: center;
+  height: 1.8em;
+  position: relative;
+}
+
+.listen a::before {
+  content: "";
+  position: absolute;
+  width: 7.6rem;
+  height: 3rem;
+  border-radius: 0.313em;
+  left: 0;
+  right: 10%;
+  top: 4%;
+}
+
+.listen a:hover {
+  background: #8121e0;
+  opacity: 0.5;
+  color: white;
+  border-radius: 0.313em;
+  -webkit-box-shadow: 0.625em 0.625em 0.375em black;
+          box-shadow: 0.625em 0.625em 0.375em black;
+}
+
+@-webkit-keyframes box {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes box {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.listen a:hover::before {
+  -webkit-animation: box 0.1s forwards ease-out;
+          animation: box 0.1s forwards ease-out;
+}
+
+.latest_releases .intro_releases {
+  text-align: center;
+  margin: auto;
+  max-width: 41em;
+}
+
+.latest_releases .intro_releases h2 {
+  margin: 3em 0 0 0;
+  font-size: 2em;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+
+.latest_releases .intro_releases p {
+  font-size: 0.8em;
+  padding-bottom: 4.375em;
+}
+
+.latest_releases .album {
+  max-width: 70em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.latest_releases .album h3 {
+  font-weight: 400;
+  font-size: 1.25em;
+  text-align: center;
+  margin: 0;
+  padding-top: 0.625em;
+}
+
+.latest_releases .album p {
+  font-weight: 200;
+  font-size: 0.75em;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 4em;
+}
+
+.mainfanbase {
+  background-color: #282828;
+  background-image: url("../../media/bg-circle-1.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 55em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+@media (max-width: 786px) {
+  .mainfanbase {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.mainfanbase .imgfanbase {
+  height: 54em;
+  width: 40%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mainfanbase .imgfanbase .fanbase1 {
+  width: 10.875em;
+  height: 8em;
+  border-radius: 0.25em;
+  position: relative;
+  left: 10.5em;
+  top: 2em;
+}
+
+.mainfanbase .imgfanbase .fanbase2 {
+  width: 14.688em;
+  height: auto;
+  border-radius: 0.25em;
+  position: relative;
+  left: 4em;
+  top: 1em;
+}
+
+.mainfanbase .imgfanbase .fanbase3 {
+  border-radius: 0.25em;
+  width: 11.875em;
+  height: auto;
+  position: relative;
+  left: 8.2em;
+  bottom: 3em;
+}
+
+.mainfanbase .imgfanbase .fanbase4 {
+  border-radius: 0.25em;
+  width: 17.813em;
+  height: auto;
+  position: relative;
+  left: 4.5em;
+  bottom: 5em;
+}
+
+.mainfanbase .imgfanbase .fanbase5 {
+  border-radius: 0.25em;
+  width: 11.875em;
+  height: auto;
+  position: relative;
+  left: 10em;
+  bottom: 9.8em;
+}
+
+.mainfanbase .imgfanbase .fanbase6 {
+  border-radius: 0.25em;
+  width: 14.375em;
+  height: auto;
+  position: relative;
+  left: 5.5em;
+  bottom: 11em;
+}
+
+.mainfanbase .txt_fanbase {
+  color: white;
+}
+
+.mainfanbase .txt_fanbase h2 {
+  font-size: 1.875em;
+  font-weight: 600;
+}
+
+.mainfanbase .txt_fanbase p {
+  font-size: 0.813em;
+  font-weight: 200;
+}
+
+.mainfanbase .txt_fanbase h3 {
+  font-size: 1.313em;
+  font-weight: 400;
+}
+
+.mainfanbase .txt_fanbase li {
+  margin: 0;
+  padding: 0 1.875em;
+  list-style: none;
+}
+
+.tourschedule h2 {
+  text-align: center;
+  font-size: 1.875em;
+  font-weight: 600;
+  margin-bottom: 2em;
+  margin-top: 3em;
+}
+
+.tourschedule .cadre {
+  max-width: 1240px;
+  padding: 1em;
+  margin: 3em auto;
+}
+
+.tourschedule .cadre .months {
+  background-color: black;
+  border-radius: 0.5em 0.5em 0 0;
+  color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 6.25em;
+  max-width: 1240px;
+  margin: auto;
+  font-weight: 500;
+  text-align: center;
+  list-style: none;
+}
+
+.tourschedule .cadre .months li {
+  margin: .5em 1em;
+}
+
+.tourschedule .cadre .months li::before {
+  content: "";
+  position: absolute;
+}
+
+.tourschedule .cadre .months li:hover {
+  color: white;
+  border-bottom: solid #8121e0 0.2em;
+}
+
+@-webkit-keyframes line {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes line {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.tourschedule .cadre .months li:hover::before {
+  -webkit-animation: line 0.1s forwards ease-out;
+          animation: line 0.1s forwards ease-out;
+}
+
+.tourschedule .cadre .places {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1240px;
+  border: solid #d4d4d4 0.1em;
+  margin: auto;
+  list-style: none;
+}
+
+.tourschedule .cadre .places .dates {
+  font-weight: 300;
+  font-size: 1em;
+  margin: auto;
+}
+
+.tourschedule .cadre .places h3 {
+  font-weight: 400;
+  font-size: 1.25em;
+  padding-left: 9em;
+}
+
+.tourschedule .cadre .places p {
+  font-size: 0.781em;
+  padding-left: 9em;
+}
+
+.tourschedule .cadre .places .explications {
+  padding-left: 14.5em;
+}
+
+.tourschedule .cadre .places a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.813em;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parteners {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../media/homepage-sponsors-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../media/homepage-sponsors-background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 27em;
+  width: 100%;
+}
+
+.parteners h2 {
+  color: white;
+  text-align: center;
+  font-size: 1.9em;
+  margin: 3em 0;
+  font-weight: 600;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 11.25em;
+}
+
+.logo .logo1 {
+  height: 5em;
+}
+
+.logo .logo2 {
+  height: 1.563em;
+  margin-top: 2.188em;
+}
+
+.logo .logo3 {
+  height: 4.063em;
+}
+
+.logo .logo4 {
+  height: 3.125em;
+  margin-top: 1.563em;
+}
+
+.tickets {
+  max-width: 1240px;
+  width: 100%;
+  margin: auto;
+  overflow: visible;
+}
+
+.tickets h2 {
+  text-align: center;
+  font-size: 2.063em;
+  font-weight: 600;
+  margin-top: 5em;
+}
+
+.tickets .tarifs {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tickets .tarifs div {
+  margin: 2em 0;
+}
+
+.tickets .tarifs h3 {
+  font-weight: 300;
+  font-size: 0.938em;
+}
+
+.tickets .tarifs p {
+  font-weight: 400;
+  font-size: 5.625em;
+  margin: auto;
+}
+
+.tickets .tarifs p .dollar {
+  font-size: 0.2em;
+  position: relative;
+  left: 1em;
+  bottom: 2.5em;
+}
+
+.tickets .tarifs ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 0.938em 0;
+}
+
+.tickets .tarifs ul li {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0.5em;
+  font-size: 0.75em;
+}
+
+.tickets .tarifs .standard {
+  border-left: solid gray 0.063em;
+  border-right: solid gray 0.063em;
+  width: 21.875em;
+  height: auto;
+  margin: 0;
+}
+
+.tickets .tarifs a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  padding: .938em 1.563em;
+  border-radius: 1.563em;
+}
+
+.tickets .tarifs a::before {
+  content: "";
+  position: absolute;
+  width: 7.6rem;
+  height: 3rem;
+  border-radius: 0.313em;
+  border: solid black 0.063em;
+  left: 0;
+  right: 10%;
+  top: 4%;
+}
+
+.tickets .tarifs a:hover {
+  background: purple;
+  color: white;
+  width: 1.125em;
+  border-radius: 0.313em;
+  -webkit-box-shadow: 0.625em 0.625em 0.375em #dddddd;
+          box-shadow: 0.625em 0.625em 0.375em #dddddd;
+}
+
+@keyframes box {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.tickets .tarifs a:hover::before {
+  -webkit-animation: box 0.1s forwards ease-out;
+          animation: box 0.1s forwards ease-out;
+}
+
+.pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 7em;
+}
+
+.pictures .img1 {
+  width: 33.1%;
+  height: 100%;
+}
+
+.pictures .img2 {
+  width: 33.4%;
+  height: 100%;
+}
+
+.pictures .img3 {
+  width: 33.4%;
+  height: 100%;
+}
+
+.pictures .img4 {
+  width: 50%;
+  height: 100%;
+}
+
+.pictures .img5 {
+  width: 50%;
+  height: 100%;
+}
+
+.titreSection {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 2em;
+  margin-top: 4em;
+}
+
+.dateNews > article > button {
+  border-radius: 3px;
+  background-color: #8121E0;
+  margin-top: 2rem;
+  border: 0;
+  line-height: 2;
+  padding: 1px 8px;
+  float: inline-start;
+}
+
+.dateNews > article > button > a {
+  color: white;
+  font-size: 15px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.h4 {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: start;
+  padding-top: 6rem;
+}
+
+.p {
+  font-size: 15px;
+  text-align: start;
+  color: grey;
+  padding-top: 2rem;
+}
+
+.p2 {
+  font-size: 18px;
+  text-align: start;
+  color: black;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.point {
+  padding-bottom: 4em;
+  padding-top: 4em;
+  width: 5%;
+}
+
+.imageNewsBackground {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../../media/homepage-news-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../media/homepage-news-background.jpg");
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.imageNewsBackground > * {
+  color: white;
+}
+
+.homePageFooterBackground {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../../media/homepage-footer-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../media/homepage-footer-background.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 44rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homePageFooterBackground .subscribe {
+  position: absolute;
+  color: #fff;
+  width: 80%;
+}
+
+.homePageFooterBackground .subscribeBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .homePageFooterBackground .subscribeBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.homePageFooterBackground .inputsubscribe {
+  height: 35px;
+  width: 80%;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 17px;
+  color: grey;
+  font-family: "Poppins", sans-serif;
+}
+
+.homePageFooterBackground .buttonsubscribe {
+  margin: 0 1em;
+  border: 0;
+  line-height: 2.5;
+  padding: 17px 40px;
+  font-size: 15px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #8121E0;
+  font-weight: 600;
+}
+
+.homePageFooterBackground .buttonsubscribe:hover {
+  background-color: #8d27f3;
+}
+
+.homePageFooterBackground .buttonsubscribe:active {
+  background-color: #8d27f3;
+  -webkit-box-shadow: 0 5px #a663dd;
+          box-shadow: 0 5px #a663dd;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+#titleSubscribe {
+  font-weight: 800;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+footer {
+  background-color: #282828;
+  text-align: center;
+  height: 50rem;
+}
+
+footer .logoFooterAngerone {
+  position: relative;
+  padding-top: 10rem;
+  width: 20rem;
+}
+
+footer .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+}
+
+footer ul {
+  padding: 0;
+  margin-top: 2rem;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+}
+
+.social ul {
+  height: auto;
+  margin-top: -2rem;
+}
+
+.social ul i {
+  font-size: 140%;
+  border-radius: 80%;
+  background-color: rgba(68, 68, 68, 0.3);
+  padding: 12px;
+}
+
+.social p {
+  font-size: 17px;
+  text-align: center;
+  color: grey;
+  padding-top: 2rem;
+  text-transform: initial;
+}
+
+.carre {
+  width: 70px;
+  height: 70px;
+  background: #8121E0;
+  border-radius: 5%;
+  margin-left: 100rem;
+  margin-top: 5rem;
+}
+
+.containerCounter {
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 30vh;
+}
+
+.containerCounter > h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -50px;
+}
+
+.countdown > div {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  margin-top: 80px;
+  margin-right: 2em;
+  font-size: 3em;
+  font-weight: 500;
+}
+
+body {
+  font: 100% 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: auto;
+}
+/*# sourceMappingURL=style.css.map */
+>>>>>>> cab4702912e8826f7da22ad4a96ec0038b1f2a38
+>>>>>>> Francis

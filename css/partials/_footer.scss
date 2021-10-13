@@ -100,7 +100,8 @@ footer
   display: none;
   position: fixed;
   color: white;
-  #carre:hover {
-    background-color: #b584e6;
-  }
+  z-index: 1;
+ 
+  
 }
+
