@@ -26,5 +26,27 @@ body
 }
 
 
+    .about_dj {
+    display: flex;
+    justify-content: space-around;
+    margin: 4em 13.5em 4em 15em;
+
+    h2{
+        font-size: 1.7em;
+        font-weight: 600;
+        margin-bottom: 0.5px;
+    }
+
+    p{
+        font-size: 0.7em;
+        
+    }
+
+    img{
+        width: 350px;
+        margin-right: 50px;
+    }
+
+    }
 
 
