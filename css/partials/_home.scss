@@ -560,17 +560,16 @@
   }
 }
 
-
-
-.titreSection {
-  font-size: 30px;
-  font-weight: 600;
-  padding-bottom: 1em;
-
+#news1,#news2,#news3
+{
+  .titreSection {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 1em;
+  }
   button {
     border-radius: 3px;
     background-color: #8121E0;
-    margin-left: -20rem;
     margin-top: 2rem;
     border: 0;
     line-height: 2;
@@ -587,7 +586,7 @@
 
   }
   .h4 {
-    font-size: 20px;
+    font-size: 26px;
     font-weight: normal;
     text-align: start;
 
@@ -597,7 +596,6 @@
   .p {
     font-size: 15px;
     text-align: start;
-    color:grey;
     padding-top: 0;
   }
 
@@ -615,6 +613,11 @@
     height: 100px;
   }
 }
+
+
+
+
+
 
 
 .imageNewsBackground {
@@ -760,4 +763,46 @@ footer {
   border-radius: 5%;
   margin-left: 100rem;
   margin-top: 5rem;
+}
+
+// *********************** Compte à rebours **********************************
+
+.containerCounter
+{
+
+
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+ height:30vh;
+  > h2
+  {
+    text-align: center;
+    font-size:2em;
+
+  }
+}
+
+.countdown
+{
+  display: flex;
+  margin-top:-50px;
+  > div
+  {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    line-height:100px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    margin-top: 80px;
+    margin-right: 2em;
+    font-size: 3em;
+    font-weight: 500;
+
+  }
 }
