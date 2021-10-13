@@ -62,7 +62,7 @@
   justify-content: center;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-  url("../../media/homepage-latest-releases-background.jpg");
+  url("../media/homepage-latest-releases-background.jpg");
   background-size: cover;
   background-position: center;
   height: 24em;
@@ -177,7 +177,7 @@
 
 .mainfanbase {
   background-color: #282828;
-  background-image: url("../../media/bg-circle-1.png");
+  background-image: url("../media/bg-circle-1.png");
   background-size: cover;
   background-position: center;
   min-height: 55em;
@@ -385,7 +385,7 @@
 
 .parteners {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-  url("../../media/homepage-sponsors-background.jpg");
+  url("../media/homepage-sponsors-background.jpg");
   background-size: cover;
   background-position: center;
   height: 27em;
@@ -566,17 +566,16 @@
   }
 }
 
-
-
-.titreSection {
-  font-size: 30px;
-  font-weight: 600;
-  padding-bottom: 1em;
-
+#news1,#news2,#news3
+{
+  .titreSection {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 1em;
+  }
   button {
     border-radius: 3px;
     background-color: #8121E0;
-    margin-left: -20rem;
     margin-top: 2rem;
     border: 0;
     line-height: 2;
@@ -593,7 +592,7 @@
 
   }
   .h4 {
-    font-size: 20px;
+    font-size: 26px;
     font-weight: normal;
     text-align: start;
 
@@ -603,7 +602,6 @@
   .p {
     font-size: 15px;
     text-align: start;
-    color:grey;
     padding-top: 0;
   }
 
@@ -623,8 +621,13 @@
 }
 
 
+
+
+
+
+
 .imageNewsBackground {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../../media/homepage-news-background.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../media/homepage-news-background.jpg');
   background-size:cover;
   border-radius: 5px;
   >* {
@@ -635,7 +638,7 @@
 }
 
 .homePageFooterBackground {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../../media/homepage-footer-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../media/homepage-footer-background.jpg");
   //background-image: url("../media/homepage-footer-background.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -766,4 +769,119 @@ footer {
   border-radius: 5%;
   margin-left: 100rem;
   margin-top: 5rem;
+}
+
+// *********************** Compte à rebours **********************************
+
+.countdown
+{
+  width: 80vh;
+ // border: 2px solid #8121E0;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  position:absolute;
+  transform:translate(-50% , -50%);
+  top: 100%;
+  left: 50%;
+}
+.box
+{
+
+  width: 28vmin;
+  height: 28vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  box-shadow: 15px 15px 30px rgba(0,0,0,0.5);
+  font-size:16px;
+}
+.box:after
+{
+  content:"";
+  position: absolute;
+  background-color: rgba(255,255,255,0.12);
+  height: 100%;
+  width: 50%;
+  left: 0;
+
+}
+
+span.num
+{
+  background-color: rgba(129, 33, 224, 0.58);
+  height:100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-weight:600;
+  font-size:5em;
+}
+
+span.text
+{
+  font-size:1.2em;
+  background-color: #7529be;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.5em 0;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1024px)
+{
+  .countdown
+  {
+    width: 85vw;
+  }
+  .box
+  {
+    height: 26vmin;
+    width: 26vmin;
+    font-size:12px;
+
+
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  .countdown
+  {
+    width: 90vw;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .box
+  {
+    ;
+    width: calc(50% - 40px);
+    height: 30vmin;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px)
+{
+  .countdown
+  {
+    width: 45vw;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .box
+  {
+  ;
+    width: 100%;
+    height: 25vmin;
+    font-size: 8px;
+  }
+  span.text
+  {
+    font-size: 1.5em;
+  }
 }
