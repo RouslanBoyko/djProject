@@ -1,31 +1,4 @@
-// ----- Import partials -----
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-
-// ----- General settings -----
-
-.discography {
-    
-    img {
-        width: 21em;
-        height: auto;
-        
-    }
-
-    h3 {
-      font-weight: 400;
-      font-size: 1.250em;
-      letter-spacing: 0.063em;
-      text-align: center;
-      margin: auto;
-      padding-top: 0.625em;
-    }
-    p {
-      font-weight: 200;
-      font-size: 0.750em;
-      letter-spacing: 0.18em;
-      text-align: center;
-      margin: auto;
-      padding-bottom: 3em;
-    }
-  }
+.discographyContent
+{
+  margin-top:3em;
+}
