@@ -1,0 +1,84 @@
+
+// ----------------- FIRST SECTION --------------------------------
+.angeroneContact {
+  margin-top:2em;
+  #signature {
+    float: right;
+  }
+  img:nth-child(2)
+  {
+    height:25%;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+  }
+
+  li {
+
+
+    padding-right: 20px;
+    font-size: 25px;
+
+    &:hover {
+      color: #8021E1;
+      cursor: pointer;
+    }
+
+  }
+
+  .getInTouch {
+    border: none;
+    border-radius: 10px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    padding: 1rem;
+    background-color: #8021E1;
+    &:hover
+    {
+      background-color: $hoverColor;
+    }
+    >a
+    {
+      color: #fff;
+      text-decoration: none;
+      text-transform:uppercase;
+      font-weight: bold;
+    }
+  }
+
+  p:nth-child(6)
+  {
+    font-size: 13px;
+  }
+  p:nth-child(7)
+  {
+    font-style: italic;
+  }
+  .line
+  {
+    border-top: 2px solid grey;
+    width:10em;
+  }
+}
+
+
+// ----------------- SECOND SECTION --------------------------------
+
+.discoverAngerone
+{
+  background-color: #F5F5F5;
+  .violetSquare
+  {
+    width: 30px;
+    height: 40px;
+    outline: 2px solid #8021E1;
+    margin: auto;
+  }
+
+}
+
+// ----------------- THIRD SECTION --------------------------------
+

@@ -1,0 +1,107 @@
+
+
+footer
+{
+  background-color: #282828;
+  text-align: center;
+  height: 15rem;
+
+  .logoFooterAngerone {
+    position: relative;
+    padding-top: 5rem;
+    width: 20rem;
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+  }
+  @media (max-width: 700px)
+  {
+    .about ul
+    {
+      display: block;
+    > li
+    {
+      padding-top: 5px;
+    }
+    }
+  }
+  ul {
+
+    margin-top: 2rem;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover
+      {
+        color:$hoverColor;
+      }
+    }
+  }
+  ul {
+    display: flex;
+  }
+  li {
+    list-style: none;
+    padding-right: 30px;
+
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+    ul {
+      height: auto;
+      margin-top: -2rem;
+
+      i {
+        font-size: 140%;
+        border-radius: 80%;
+        background-color: rgba($color: #444444, $alpha: 0.3);
+        padding: 12px;
+        margin-top:2em;
+        &:hover
+        {
+          color:$hoverColor;
+        }
+      }
+    }
+  }
+  p {
+    font-size: 17px;
+    text-align: center;
+    color: grey;
+    padding-top: 2rem;
+    text-transform: initial;
+  }
+}
+
+#carre {
+  width: 70px;
+  height: 70px;
+  background: #8121E0;
+  border-radius: 5%;
+  margin-left: 80rem;
+  margin-top: 40rem;
+  position: absolute;
+  display: block;
+  position: fixed;
+  color: white;
+  z-index: 1;
+  
+ 
+  
+}

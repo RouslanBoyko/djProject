@@ -1,0 +1,76 @@
+.header
+{
+  background-image: url("../media/banner-img.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  padding-top: 3em;
+
+  ul
+  {
+    list-style: none;
+    padding-bottom: 10px;
+  }
+   li
+  {
+    padding-right: 20px;
+    display: inline;
+    text-transform: uppercase;
+  }
+  a
+  {
+    font-size: 20px;
+    text-decoration: none;
+    color: $linkColor;
+
+    &:hover
+    {
+      color: $hoverColor;
+    }
+
+  }
+  i
+  {
+    color: $linkColor;
+    font-size: 25px;
+
+    &:hover
+    {
+      color: $hoverColor;
+    }
+    cursor: pointer;
+  }
+  @media(max-width: 991px)
+  {
+   nav li
+    {
+      display: none;
+    }
+  }
+  h1
+  {
+    margin-top: 7em ;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  p
+  {
+
+    color: #fff;
+    &:hover
+    {
+      color: $hoverColor;
+      cursor: pointer;
+    }
+  }
+  .bx.bxs-circle
+  {
+    font-size:8px;
+  }
+  ul:nth-child(2)
+  {
+    padding-right: 22px;
+    margin-top: 4em;
+  }
+}
