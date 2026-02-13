@@ -8,7 +8,7 @@ let secBox = document.getElementById("sec-box");
 // format: Date(year,month,day,hour,minute)
 // year is counter from 0 to 1
 
-let endDate = new Date(2023,11,31,23,59)
+let endDate = new Date(2026,11,31,23,59)
 let endTime = endDate.getTime()
 
 function countdown()
